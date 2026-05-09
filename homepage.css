@@ -1,0 +1,61 @@
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+#greeting{
+    position:absolute;
+    left:600px;
+    top:90px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#negation{
+    font-size:large;
+    position:absolute;
+    top:170px;
+    left:540px;
+        width:545px;
+
+}
+a{
+    margin-right:50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color:black;
+    
+}
+#body{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(back.jpg);
+     height: 400px;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    position:absolute;
+    top:240px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width:99%;
+    left:8px;
+    text-align:center;
+}
+
+.auth-buttons {
+    position:absolute;
+    top:20px;
+    right: 20px;
+    height:auto;
+    width:170px;
+}
+
+
+.btn {
+    
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
