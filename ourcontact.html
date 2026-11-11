@@ -3,97 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="orcontact.css">
+    <title>Contact & Shop Location | Guru Men's Wear (GMW)</title>
+    <meta name="description" content="Contact Guru Men's Wear in Jamadar Complex, Noubad, Bidar. Call +91 8722273051, get Google Maps directions, or chat with our master tailor.">
     
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Guru Tailor</title>
-    
+    <!-- Google Fonts & Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=20260929_01">
 </head>
 <body>
-     
-    <img src="logo gmw.jpg" style="height:60px; width:120px;border-radius:10%; position:absolute;left:720px;top:30px;" >
-    <h1 id="greeting" label="greeting">WelCome To Guru Tailor</h1>
-    <div id="negation">
-    <a  href="index.html">Home</a>
-    <a href="service.html">Services</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="booking.html">Booking</a>
-    <a style="text-decoration: underline;" href="contact.html">Contact</a>
-</div>
-    <div id="body">
-        <h1 style="height:36px; position: relative;top:50px;">Guru Mens Wear</h1>
-        <h2 style="font-weight: bold ;font-size:30px;position: relative;top:60px;">Stay Connected with Us</h2>
-        <h3 style="height:20px; position: relative;top: 90px;width:850px;left:350px;">Follow our social media channels to stay updated on the latest styles, exclusive promotions, and tailoring tips. Join our community and be the first to know about our special offers and new arrivals</h3>
-    
-        <button onclick="window.location.href='order.html'" style="background-color:orangered;width:150px;height:50px;border-radius:5%;  color: white;font-size: large;position: relative;top:160px;">Book Now</button>
 
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <header class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="top-bar-item"><i class="fa-solid fa-location-dot"></i> Jamadar Complex, Noubad, Bidar - 585401</span>
+                <span class="top-bar-item"><i class="fa-solid fa-clock"></i> Mon-Sat: 9 AM - 8 PM | Sun: 9 AM - 2 PM</span>
+            </div>
+            <div class="top-bar-right">
+                <span class="top-bar-item"><i class="fa-solid fa-phone" style="color: #2563eb !important;"></i> <a href="tel:+918722273051">+91 8722273051</a> / <a href="tel:+916362729684">+91 6362729684</a></span>
+                <span class="top-bar-item"><i class="fa-brands fa-whatsapp" style="color: #25d366 !important;"></i> <a href="https://wa.me/918722273051" target="_blank">Chat on WhatsApp</a></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- STICKY NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand-logo">
+                <img src="logo gmw.jpg" alt="Guru Men's Wear Logo">
+                <div class="brand-text">
+                    <span class="brand-title">Guru Men's Wear</span>
+                    <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu (Single Line Aligned) -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="service.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="order.html" class="nav-link">Price & Order</a></li>
+                <li><a href="booking.html" class="nav-link">Book Fitting</a></li>
+                <li><a href="ourcontact.html" class="nav-link active">Contact</a></li>
+            </ul>
+
+            <!-- ACTION BUTTONS: SIGN IN & SIGN UP (MOVED TO RIGHT) -->
+            <div class="nav-actions">
+                <a href="signin.html" class="btn btn-sm" style="background-color: #ff7346 !important; color: #ffffff !important; font-weight: 700; padding: 8px 18px; border-radius: 6px;"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+                <a href="signup.html" class="btn btn-sm" style="background-color: #ff7346 !important; color: #ffffff !important; font-weight: 700; padding: 8px 18px; border-radius: 6px;"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+                <button class="mobile-toggle" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-content">
+            <div class="brand-logo" style="margin-bottom: 15px;">
+                <img src="logo gmw.jpg" alt="Guru Men's Wear" style="height: 48px;">
+                <div class="brand-text">
+                    <span class="brand-title" style="font-size: 1.15rem;">Guru Men's Wear</span>
+                    <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                </div>
+            </div>
+            <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+                <a href="signin.html" class="btn btn-auth-signin btn-sm" style="flex: 1;"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+                <a href="signup.html" class="btn btn-auth-signup btn-sm" style="flex: 1;"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+            </div>
+            <a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="service.html" class="mobile-nav-link"><i class="fa-solid fa-shirt"></i> Services & Pricing</a>
+            <a href="gallery.html" class="mobile-nav-link"><i class="fa-solid fa-images"></i> Work & Shop Gallery</a>
+            <a href="order.html" class="mobile-nav-link"><i class="fa-solid fa-calculator"></i> Price & Order Calculator</a>
+            <a href="booking.html" class="mobile-nav-link"><i class="fa-solid fa-calendar-check"></i> Book an Appointment</a>
+            <a href="ourcontact.html" class="mobile-nav-link active"><i class="fa-solid fa-location-dot"></i> Contact & Location</a>
+            <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 10px 0;">
+            <a href="https://wa.me/918722273051" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat with Master Tailor</a>
+            <a href="tel:+918722273051" class="btn btn-dark"><i class="fa-solid fa-phone"></i> Call Shop Now</a>
+        </div>
     </div>
 
-            <hr style=" border-radius:10px; position:relative;top:710px;height: 5px;background: linear-gradient(to bottom,#ff4500,#ff7043,rgba(255, 69, 0, 0.1));">
+    <!-- PAGE HERO -->
+    <header class="hero" style="padding: 60px 0 70px;">
+        <div class="container" style="text-align: center;">
+            <span class="badge badge-gold" style="margin-bottom: 14px;"><i class="fa-solid fa-location-dot"></i> Jamadar Complex, Noubad, Bidar</span>
+            <h1 class="hero-title" style="margin-bottom: 12px;">Get In Touch With <span>Our Atelier</span></h1>
+            <p class="hero-subtitle" style="max-width: 700px; margin: 0 auto;">
+                For inquiries, custom fittings, urgent alterations, or fabric advice, reach out to us directly or visit our shop in Jamadar Complex, Noubad, Bidar.
+            </p>
+        </div>
+    </header>
 
-        <h1 style="position:absolute; top:750px;left:645px;word-spacing:5px;letter-spacing:1.5px;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgba(0, 0, 0, 0.65);">Get in Touch</h1>
+    <!-- CONTACT GRID & MAP -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
 
-         <hr style=" border-radius:10px; position:relative;top:825px;height: 5px;background: linear-gradient(to bottom,#ff4500,#ff7043,rgba(255, 69, 0, 0.1));">
+                <!-- Left Column: Contact Cards -->
+                <div class="contact-info-cards">
+                    
+                    <!-- Location Card -->
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-shop"></i></div>
+                        <div class="contact-details">
+                            <h4>Workshop & Tailoring Studio</h4>
+                            <p>
+                                <strong>Guru Men's Wear (GMW)</strong><br>
+                                Jamadar Complex, Noubad<br>
+                                Bidar District, Karnataka - 585401<br>
+                                <span style="font-size: 0.85rem; color: #64748b;"><i class="fa-solid fa-compass" style="color: #ff7346;"></i> Coordinates: <strong>17.935206, 77.473038</strong></span>
+                            </p>
+                            <div style="margin-top: 8px;">
+                                <a href="https://www.google.com/maps/search/?api=1&query=17.935206,77.473038" target="_blank" class="btn btn-primary btn-sm" style="margin-top: 6px;">
+                                    <i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
-    
-        <p style="    position: absolute;
-    top: 865px;
-    text-align:center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ff7346;
-    left: 290px;
-    font-size:large;
-    word-spacing: 5px;
-    letter-spacing: 1.5px;
-    width: 980px;
-    line-height: 2.3;">For inquiries, appointments, or further information, feel free to reach out to us. We are here to assist you with your tailoring needs and ensure your experience is exceptional.</p>
-   
-    <a href="https://maps.app.goo.gl/pva9wBMVTKwWhq4o9">
-    <img style="position:absolute;top:1030px;left:100px;height:500px;width:500px;border-radius: 8px;;"src="map.png">
+                    <!-- Phone Numbers -->
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                        <div class="contact-details">
+                            <h4>Call or WhatsApp Us</h4>
+                            <p style="margin-bottom: 6px;">
+                                Primary Contact: <a href="tel:+918722273051" style="font-weight: 700; color: var(--primary);">+91 8722273051</a>
+                            </p>
+                            <p style="margin-bottom: 10px;">
+                                Alternate Contact: <a href="tel:+916362729684" style="font-weight: 700; color: var(--primary);">+91 6362729684</a>
+                            </p>
+                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                <a href="https://wa.me/918722273051" target="_blank" class="btn btn-whatsapp btn-sm">
+                                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                                </a>
+                                <a href="tel:+918722273051" class="btn btn-call btn-sm">
+                                    <i class="fa-solid fa-phone"></i> Call Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                        <div class="contact-details">
+                            <h4>Email Inquiries</h4>
+                            <p><a href="mailto:gurumenswear@gmail.com">gurumenswear@gmail.com</a></p>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Quick reply for custom corporate / bulk uniform orders</span>
+                        </div>
+                    </div>
+
+                    <!-- Timings & Days -->
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div class="contact-details">
+                            <h4>Operating Hours</h4>
+                            <p style="margin-bottom: 4px;"><strong>Monday &ndash; Saturday:</strong> 9:00 AM &ndash; 8:00 PM</p>
+                            <p style="margin-bottom: 8px;"><strong>Sunday:</strong> 9:00 AM &ndash; 2:00 PM</p>
+                            <span class="badge badge-gold" style="font-size: 0.72rem;"><i class="fa-solid fa-circle" style="color: #16a34a; font-size: 0.6rem;"></i> Customer Support Available</span>
+                        </div>
+                    </div>
+
+                    <!-- Payment Methods -->
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-credit-card"></i></div>
+                        <div class="contact-details">
+                            <h4>Payment Modes Accepted</h4>
+                            <p>All UPI Payments (Google Pay, PhonePe, Paytm, BHIM), Debit / Credit Cards, and Cash upon trial delivery.</p>
+                        </div>
+                    </div>
+
+                    <!-- Official Visiting Card -->
+                    <div class="visiting-card-box">
+                        <div style="background: var(--primary); color: white; padding: 10px 16px; font-size: 0.88rem; font-weight: 700; display: flex; align-items: center; justify-content: space-between;">
+                            <span><i class="fa-solid fa-address-card" style="color: var(--accent);"></i> Official Shop Card</span>
+                            <span style="font-size: 0.75rem; color: #94a3b8;">Guru Men's Wear</span>
+                        </div>
+                        <img src="guru mens wear visiting card.jpg" alt="Guru Men's Wear Visiting Card">
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Interactive Map & WhatsApp Inquiry Form -->
+                <div style="display: flex; flex-direction: column; gap: 24px;">
+
+                    <!-- Map Box -->
+                    <div class="map-wrapper">
+                        <div class="map-box">
+                            <a href="https://www.google.com/maps/search/?api=1&query=17.935206,77.473038" target="_blank" title="Click to open Google Maps for turn-by-turn directions">
+                                <img src="location_map.png" alt="Google Map Location of Guru Men's Wear at Jamadar Complex, Noubad, Bidar">
+                            </a>
+                        </div>
+                        <div class="map-action-bar">
+                            <div>
+                                <strong style="color: var(--primary); font-size: 1.05rem;">Guru Men's Wear, Jamadar Complex</strong>
+                                <div style="font-size: 0.85rem; color: var(--text-muted);">Noubad, Bidar - 585401 (17.935206, 77.473038)</div>
+                            </div>
+                            <a href="https://www.google.com/maps/search/?api=1&query=17.935206,77.473038" target="_blank" class="btn btn-primary btn-sm">
+                                <i class="fa-solid fa-location-arrow"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Instant Inquiry Form -->
+                    <div class="calc-wrapper" style="box-shadow: var(--shadow-md);">
+                        <div class="calc-header" style="background: var(--dark-gradient); padding: 22px 20px;">
+                            <h3 style="font-size: 1.35rem;"><i class="fa-solid fa-paper-plane" style="color: var(--accent);"></i> Send Instant Message</h3>
+                            <p style="font-size: 0.88rem;">Have a question? Send it straight to our master tailor on WhatsApp.</p>
+                        </div>
+                        <div class="calc-body" style="padding: 24px 20px;">
+                            <form id="directContactForm">
+                                <div class="form-group">
+                                    <label for="contactName">Your Name</label>
+                                    <input type="text" id="contactName" class="form-control" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactPhone">Your Phone Number</label>
+                                    <input type="tel" id="contactPhone" class="form-control" placeholder="Enter your mobile number" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactMessage">Your Message / Query</label>
+                                    <textarea id="contactMessage" class="form-control" rows="4" placeholder="Ask about fabric cutting, custom suits, wedding orders, or alteration timings..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%;">
+                                    <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="floating-actions">
+        <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20would%20like%20to%20get%20in%20touch." target="_blank" class="float-btn float-whatsapp" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
         </a>
+        <a href="tel:+918722273051" class="float-btn float-call" title="Call Shop" aria-label="Call Shop">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
 
-    <p style="position:absolute;top:1040px;left:740px;font-size:25px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgba(0, 0, 0, 0.65);">
-   <i class="fa-solid fa-location-dot"></i>
-   Toglur, Basavakalyan, bidar Karnataka-585327
-</p>
+    <!-- LUXURY FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <img src="logo gmw.jpg" alt="GMW Logo" style="height: 48px; background: white; padding: 2px;">
+                        <div class="brand-text">
+                            <span class="brand-title">Guru Men's Wear</span>
+                            <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                        </div>
+                    </div>
+                    <p>
+                        Dedicated to the art of master fabric cutting and bespoke men's tailoring. Stitched to your unique measurements with premium craftsmanship in Jamadar Complex, Noubad, Bidar.
+                    </p>
+                </div>
 
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="service.html"><i class="fa-solid fa-angle-right"></i> Tailoring Services</a></li>
+                        <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Photo Gallery</a></li>
+                        <li><a href="order.html"><i class="fa-solid fa-angle-right"></i> Price & Order Sheet</a></li>
+                        <li><a href="booking.html"><i class="fa-solid fa-angle-right"></i> Book Fitting Slot</a></li>
+                        <li><a href="ourcontact.html"><i class="fa-solid fa-angle-right"></i> Contact & Location</a></li>
+                    </ul>
+                </div>
 
-    <p style="width:500px;position:absolute;top:1110px;left:740px;font-size:25px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgba(0, 0, 0, 0.65);">
-   <i class="fa-solid fa-clock"></i>
-   Monday - Saturday : 9:00 AM - 8:00 PM
-     Sunday : 9:00 AM - 2:00 PM
-</p>
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="service.html#shirt"><i class="fa-solid fa-scissors"></i> Custom Shirts (₹350)</a></li>
+                        <li><a href="service.html#pant"><i class="fa-solid fa-scissors"></i> Formal Trousers (₹500)</a></li>
+                        <li><a href="service.html#suit"><i class="fa-solid fa-scissors"></i> Bespoke Suits (₹1,200)</a></li>
+                        <li><a href="service.html#blezer"><i class="fa-solid fa-scissors"></i> Royal Blazers (₹1,450)</a></li>
+                        <li><a href="service.html#lkurta"><i class="fa-solid fa-scissors"></i> Long Kurtas (₹580)</a></li>
+                        <li><a href="service.html#alternation"><i class="fa-solid fa-scissors"></i> Expert Alterations</a></li>
+                    </ul>
+                </div>
 
-<p style="position:absolute;top:1210px;left:740px;font-size:25px;letter-spacing:3px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgba(0, 0, 0, 0.65);">
-   <i class="fa-solid fa-phone"></i>
-   +91 8722273051 / +91 6362729684
-</p>
+                <div>
+                    <h4 class="footer-title">Contact Workshop</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Jamadar Complex, Noubad, Bidar - 585401</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span><a href="tel:+918722273051">+91 8722273051</a> / <a href="tel:+916362729684">6362729684</a></span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>gurumenswear@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-credit-card"></i>
+                            <span>UPI (PhonePe / GPay / Paytm), Cash</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-<p style="position:absolute;top:1280px;left:740px;font-size:25px;letter-spacing:3px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgba(0, 0, 0, 0.65);">
-   <i class="fa-solid fa-envelope"></i>
-   gurumenswear@gmail.com
-</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Guru Men's Wear (GMW). All rights reserved.</p>
+                <p>Crafted with pride &bull; Perfect Stitch, Perfect Fit</p>
+            </div>
+        </div>
+    </footer>
 
-<p style="position:absolute;top:1350px;left:740px;font-size:25px;letter-spacing:3px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgba(0, 0, 0, 0.65);">
-   <i class="fa-solid fa-headset"></i>
-   Customer Support Available
-</p>
-
-<p style="position:absolute;top:1420px;left:740px;font-size:25px;letter-spacing:3px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgba(0, 0, 0, 0.65);">
-   <i class="fa-solid fa-credit-card"></i>
-   UPI / Card / Cash Accepted
-</p>
-
-
-<hr style=" border-radius:10px; position:relative;top:1550px;height: 5px;background: linear-gradient(to bottom,#ff4500,#ff7043,rgba(255, 69, 0, 0.1));">
-
-
-<h3 style="position:absolute;top:1600px;text-align:center;    height: 50px;width: 1200px;margin-left: 150px; word-spacing: 4px;letter-spacing: 1.2px;">Your satisfaction is our priority. We believe in clear communication, quick responses, and reliable support. If you have any inquiries, suggestions, or feedback, do not hesitate to contact us. We are always happy to connect with you and ensure you receive the best experience</h3>
-
- <div style="height:50px; width:50px;position: absolute; top:1720px;">
-    
-
-
+    <!-- MAIN JAVASCRIPT -->
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,134 +1,364 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Stitching Order</title>
-    <link rel="stylesheet" href="order.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stitching Order & Price Calculator | Guru Men's Wear (GMW)</title>
+    <meta name="description" content="Calculate your custom stitching order price live and send order directly via WhatsApp to Guru Men's Wear, Jamadar Complex, Noubad, Bidar.">
+    
+    <!-- Google Fonts & Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=20260929_01">
 </head>
 <body>
 
-    <div class="container">
-
-        <h1 style="color:orangered">Customize Your Stitching Order</h1>
-
-        <!-- ITEM CARD -->
-        <div class="item-card">
-            <div class="item-header">
-                <span class="item-name">Shirt</span>
-                <span class="item-price">₹350</span>
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <header class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="top-bar-item"><i class="fa-solid fa-location-dot"></i> Jamadar Complex, Noubad, Bidar - 585401</span>
+                <span class="top-bar-item"><i class="fa-solid fa-clock"></i> Mon-Sat: 9 AM - 8 PM | Sun: 9 AM - 2 PM</span>
             </div>
-
-            <div class="item-controls">
-                <button class="minus">-</button>
-                <input type="number" value="0" min="0">
-                <button class="plus">+</button>
-                <span class="item-total">₹0</span>
+            <div class="top-bar-right">
+                <span class="top-bar-item"><i class="fa-solid fa-phone" style="color: #2563eb !important;"></i> <a href="tel:+918722273051">+91 8722273051</a> / <a href="tel:+916362729684">+91 6362729684</a></span>
+                <span class="top-bar-item"><i class="fa-brands fa-whatsapp" style="color: #25d366 !important;"></i> <a href="https://wa.me/918722273051" target="_blank">Chat on WhatsApp</a></span>
             </div>
         </div>
+    </header>
 
-        <div class="item-card">
-            <div class="item-header">
-                <span class="item-name">Pant</span>
-                <span class="item-price">₹500</span>
-            </div>
+    <!-- STICKY NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand-logo">
+                <img src="logo gmw.jpg" alt="Guru Men's Wear Logo">
+                <div class="brand-text">
+                    <span class="brand-title">Guru Men's Wear</span>
+                    <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                </div>
+            </a>
 
-            <div class="item-controls">
-                <button class="minus">-</button>
-                <input type="number" value="0" min="0">
-                <button class="plus">+</button>
-                <span class="item-total">₹0</span>
-            </div>
-        </div>
+            <!-- Desktop Menu (Single Line Aligned) -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="service.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="order.html" class="nav-link active">Price & Order</a></li>
+                <li><a href="booking.html" class="nav-link">Book Fitting</a></li>
+                <li><a href="ourcontact.html" class="nav-link">Contact</a></li>
+            </ul>
 
-        <div class="item-card">
-            <div class="item-header">
-                <span class="item-name">Suit</span>
-                <span class="item-price">₹1200</span>
-            </div>
-
-            <div class="item-controls">
-                <button class="minus">-</button>
-                <input type="number" value="0" min="0">
-                <button class="plus">+</button>
-                <span class="item-total">₹0</span>
-            </div>
-        </div>
-
-        <div class="item-card">
-            <div class="item-header">
-                <span class="item-name">Blazer</span>
-                <span class="item-price">₹1450</span>
-            </div>
-
-            <div class="item-controls">
-                <button class="minus">-</button>
-                <input type="number" value="0" min="0">
-                <button class="plus">+</button>
-                <span class="item-total">₹0</span>
+            <!-- ACTION BUTTONS: SIGN IN & SIGN UP (MOVED TO RIGHT) -->
+            <div class="nav-actions">
+                <a href="signin.html" class="btn btn-sm" style="background-color: #ff7346 !important; color: #ffffff !important; font-weight: 700; padding: 8px 18px; border-radius: 6px;"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+                <a href="signup.html" class="btn btn-sm" style="background-color: #ff7346 !important; color: #ffffff !important; font-weight: 700; padding: 8px 18px; border-radius: 6px;"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+                <button class="mobile-toggle" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
         </div>
+    </nav>
 
-        <div class="item-card">
-            <div class="item-header">
-                <span class="item-name">Long Kurta</span>
-                <span class="item-price">₹580</span>
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-content">
+            <div class="brand-logo" style="margin-bottom: 15px;">
+                <img src="logo gmw.jpg" alt="Guru Men's Wear" style="height: 48px;">
+                <div class="brand-text">
+                    <span class="brand-title" style="font-size: 1.15rem;">Guru Men's Wear</span>
+                    <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                </div>
             </div>
-
-            <div class="item-controls">
-                <button class="minus">-</button>
-                <input type="number" value="0" min="0">
-                <button class="plus">+</button>
-                <span class="item-total">₹0</span>
+            <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+                <a href="signin.html" class="btn btn-auth-signin btn-sm" style="flex: 1;"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+                <a href="signup.html" class="btn btn-auth-signup btn-sm" style="flex: 1;"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
             </div>
+            <a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="service.html" class="mobile-nav-link"><i class="fa-solid fa-shirt"></i> Services & Pricing</a>
+            <a href="gallery.html" class="mobile-nav-link"><i class="fa-solid fa-images"></i> Work & Shop Gallery</a>
+            <a href="order.html" class="mobile-nav-link active"><i class="fa-solid fa-calculator"></i> Price & Order Calculator</a>
+            <a href="booking.html" class="mobile-nav-link"><i class="fa-solid fa-calendar-check"></i> Book an Appointment</a>
+            <a href="ourcontact.html" class="mobile-nav-link"><i class="fa-solid fa-location-dot"></i> Contact & Location</a>
+            <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 10px 0;">
+            <a href="https://wa.me/918722273051" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat with Master Tailor</a>
+            <a href="tel:+918722273051" class="btn btn-dark"><i class="fa-solid fa-phone"></i> Call Shop Now</a>
         </div>
-
-        <div class="item-card">
-            <div class="item-header">
-                <span class="item-name">Short Kurta</span>
-                <span class="item-price">₹550</span>
-            </div>
-
-            <div class="item-controls">
-                <button class="minus">-</button>
-                <input type="number" value="0" min="0">
-                <button class="plus">+</button>
-                <span class="item-total">₹0</span>
-            </div>
-        </div>
-
-        <div class="item-card">
-            <div class="item-header">
-                <span class="item-name">Safari</span>
-                <span class="item-price">₹900</span>
-            </div>
-
-            <div class="item-controls">
-                <button class="minus">-</button>
-                <input type="number" value="0" min="0">
-                <button class="plus">+</button>
-                <span class="item-total">₹0</span>
-            </div>
-        </div>
-
-        <!-- TOTAL SECTION -->
-        <div class="total-section">
-            <h2 style="color:black">Total Amount: ₹0</h2>
-            <button class="pay-btn">PAY NOW</button>
-        </div>
-
-        <!-- CUSTOMER DETAILS (Hidden for now) -->
-        <div class="details-form">
-            <h3>Enter Your Details</h3>
-            <input type="text" placeholder="Enter Name">
-            <input type="tel" placeholder="Enter Phone Number">
-            <button class="confirm-btn">Confirm & Pay</button>
-        </div>
-
-        <!-- SUCCESS MESSAGE -->
-        <div class="success-message">
-            <h2>Order Placed Successfully!</h2>
-        </div>
-
     </div>
 
+    <!-- PAGE HEADER -->
+    <header class="hero" style="padding: 60px 0 70px;">
+        <div class="container" style="text-align: center;">
+            <span class="badge badge-gold" style="margin-bottom: 14px;"><i class="fa-solid fa-calculator"></i> Digital Order Sheet</span>
+            <h1 class="hero-title" style="margin-bottom: 12px;">Customize Your <span>Stitching Order</span></h1>
+            <p class="hero-subtitle" style="max-width: 700px; margin: 0 auto;">
+                Select the quantity of each garment you want stitched. Your estimate updates automatically in real time. Submit directly via WhatsApp to begin your tailoring order!
+            </p>
+        </div>
+    </header>
+
+    <!-- LIVE INTERACTIVE ORDER SHEET -->
+    <section class="section">
+        <div class="container container-narrow">
+
+            <div class="calc-wrapper">
+                <div class="calc-header">
+                    <h3>Guru Men's Wear Order Estimator</h3>
+                    <p>Transparent official pricing &bull; High precision finish</p>
+                </div>
+
+                <div class="calc-body">
+                    <h4 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 16px;">1. Select Garments & Quantities</h4>
+                    
+                    <div class="calc-grid">
+                        <!-- Shirt -->
+                        <div class="calc-item-card" data-name="Shirt" data-price="350">
+                            <div class="calc-item-info">
+                                <h4>Shirt</h4>
+                                <span class="item-unit-price">₹350 / piece</span>
+                            </div>
+                            <div class="calc-stepper">
+                                <button type="button" class="calc-btn minus" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="calc-qty-input" value="0" min="0">
+                                <button type="button" class="calc-btn plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <div class="calc-item-total">₹0</div>
+                        </div>
+
+                        <!-- Pant -->
+                        <div class="calc-item-card" data-name="Pant / Trouser" data-price="500">
+                            <div class="calc-item-info">
+                                <h4>Pant / Trouser</h4>
+                                <span class="item-unit-price">₹500 / piece</span>
+                            </div>
+                            <div class="calc-stepper">
+                                <button type="button" class="calc-btn minus" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="calc-qty-input" value="0" min="0">
+                                <button type="button" class="calc-btn plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <div class="calc-item-total">₹0</div>
+                        </div>
+
+                        <!-- Suit -->
+                        <div class="calc-item-card" data-name="Bespoke Suit" data-price="1200">
+                            <div class="calc-item-info">
+                                <h4>Bespoke Suit</h4>
+                                <span class="item-unit-price">₹1,200 / piece</span>
+                            </div>
+                            <div class="calc-stepper">
+                                <button type="button" class="calc-btn minus" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="calc-qty-input" value="0" min="0">
+                                <button type="button" class="calc-btn plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <div class="calc-item-total">₹0</div>
+                        </div>
+
+                        <!-- Blazer -->
+                        <div class="calc-item-card" data-name="Blazer" data-price="1450">
+                            <div class="calc-item-info">
+                                <h4>Blazer</h4>
+                                <span class="item-unit-price">₹1,450 / piece</span>
+                            </div>
+                            <div class="calc-stepper">
+                                <button type="button" class="calc-btn minus" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="calc-qty-input" value="0" min="0">
+                                <button type="button" class="calc-btn plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <div class="calc-item-total">₹0</div>
+                        </div>
+
+                        <!-- Long Kurta -->
+                        <div class="calc-item-card" data-name="Long Kurta" data-price="580">
+                            <div class="calc-item-info">
+                                <h4>Long Kurta</h4>
+                                <span class="item-unit-price">₹580 / piece</span>
+                            </div>
+                            <div class="calc-stepper">
+                                <button type="button" class="calc-btn minus" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="calc-qty-input" value="0" min="0">
+                                <button type="button" class="calc-btn plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <div class="calc-item-total">₹0</div>
+                        </div>
+
+                        <!-- Short Kurta -->
+                        <div class="calc-item-card" data-name="Short Kurta" data-price="550">
+                            <div class="calc-item-info">
+                                <h4>Short Kurta</h4>
+                                <span class="item-unit-price">₹550 / piece</span>
+                            </div>
+                            <div class="calc-stepper">
+                                <button type="button" class="calc-btn minus" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="calc-qty-input" value="0" min="0">
+                                <button type="button" class="calc-btn plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <div class="calc-item-total">₹0</div>
+                        </div>
+
+                        <!-- Safari Suit -->
+                        <div class="calc-item-card" data-name="Safari Suit" data-price="900">
+                            <div class="calc-item-info">
+                                <h4>Safari Suit</h4>
+                                <span class="item-unit-price">₹900 / piece</span>
+                            </div>
+                            <div class="calc-stepper">
+                                <button type="button" class="calc-btn minus" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="calc-qty-input" value="0" min="0">
+                                <button type="button" class="calc-btn plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <div class="calc-item-total">₹0</div>
+                        </div>
+                    </div>
+
+                    <!-- Live Summary Display -->
+                    <div class="calc-summary-box">
+                        <div class="summary-details">
+                            <span class="summary-label">Estimated Total Stitching Bill</span>
+                            <span class="summary-amount" id="calcTotalAmount">₹0</span>
+                            <span class="summary-count" id="calcTotalCount">0 Garments selected</span>
+                        </div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted); max-width: 250px;">
+                            *Final price may vary for special designer embellishments or heavy embroidery.
+                        </div>
+                    </div>
+
+                    <!-- Customer Details Form -->
+                    <h4 style="font-size: 1.1rem; color: var(--primary); margin: 30px 0 16px;">2. Your Contact & Fabric Details</h4>
+
+                    <div class="order-form-grid">
+                        <div class="form-group">
+                            <label for="orderCustomerName"><i class="fa-solid fa-user"></i> Full Name *</label>
+                            <input type="text" id="orderCustomerName" class="form-control" placeholder="e.g. Ramesh Patil" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orderCustomerPhone"><i class="fa-solid fa-phone"></i> Mobile Number *</label>
+                            <input type="tel" id="orderCustomerPhone" class="form-control" placeholder="e.g. 9876543210" required>
+                        </div>
+                    </div>
+
+                    <div class="order-form-grid">
+                        <div class="form-group">
+                            <label for="orderFabricSource"><i class="fa-solid fa-scroll"></i> Fabric Arrangement</label>
+                            <select id="orderFabricSource" class="form-control">
+                                <option value="I will bring my own fabric">I will bring my own fabric</option>
+                                <option value="I need fabric consultation at shop">I need fabric consultation at shop</option>
+                                <option value="I want to buy fabric through shop">I want to buy fabric through shop</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="orderNotes"><i class="fa-solid fa-comment-dots"></i> Special Instructions (Optional)</label>
+                            <input type="text" id="orderNotes" class="form-control" placeholder="e.g. Need delivery before Friday / Chinese collar">
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div style="margin-top: 24px; text-align: center;">
+                        <button type="button" id="btnSubmitOrder" class="btn btn-submit-order btn-lg" style="width: 100%; font-size: 1.18rem; padding: 18px 24px; background: #ff7346 !important; background: linear-gradient(135deg, #ff8558 0%, #ff7346 100%) !important; color: #ffffff !important; border: none; border-radius: 10px; font-weight: 800; box-shadow: 0 8px 24px rgba(255, 115, 70, 0.45); display: inline-flex; align-items: center; justify-content: center; gap: 10px; cursor: pointer;">
+                            <span style="background: #25d366; color: white; width: 34px; height: 34px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 1.15rem; box-shadow: 0 2px 6px rgba(0,0,0,0.25);"><i class="fa-brands fa-whatsapp"></i></span> Send Order to Master Tailor via WhatsApp
+                        </button>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 10px;">
+                            <i class="fa-solid fa-lock"></i> No upfront payment required. Your order will be received directly by our master tailor on WhatsApp to schedule your measurement session.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Steps summary -->
+            <div style="margin-top: 40px; background: white; padding: 24px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                <h4 style="color: var(--primary); margin-bottom: 12px;"><i class="fa-solid fa-circle-info" style="color: var(--accent);"></i> How Your Order Works:</h4>
+                <ol style="margin-left: 20px; line-height: 1.8; color: var(--text-secondary); font-size: 0.92rem;">
+                    <li><strong>Submit Order:</strong> Click "Send Order via WhatsApp" with your selections.</li>
+                    <li><strong>Fit Confirmation:</strong> Our master tailor receives your message and confirms your measurement date or accepts your sent sample shirt/pant.</li>
+                    <li><strong>Trial & Delivery:</strong> Once crafted, visit for a quick trial. Pay with UPI or cash upon delivery!</li>
+                </ol>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="floating-actions">
+        <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20have%20a%20question%20about%20ordering." target="_blank" class="float-btn float-whatsapp" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+918722273051" class="float-btn float-call" title="Call Shop" aria-label="Call Shop">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- LUXURY FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <img src="logo gmw.jpg" alt="GMW Logo" style="height: 48px; background: white; padding: 2px;">
+                        <div class="brand-text">
+                            <span class="brand-title">Guru Men's Wear</span>
+                            <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                        </div>
+                    </div>
+                    <p>
+                        Dedicated to the art of master fabric cutting and bespoke men's tailoring. Stitched to your unique measurements with premium craftsmanship in Jamadar Complex, Noubad, Bidar.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="service.html"><i class="fa-solid fa-angle-right"></i> Tailoring Services</a></li>
+                        <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Photo Gallery</a></li>
+                        <li><a href="order.html"><i class="fa-solid fa-angle-right"></i> Price & Order Sheet</a></li>
+                        <li><a href="booking.html"><i class="fa-solid fa-angle-right"></i> Book Fitting Slot</a></li>
+                        <li><a href="ourcontact.html"><i class="fa-solid fa-angle-right"></i> Contact & Location</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="service.html#shirt"><i class="fa-solid fa-scissors"></i> Custom Shirts (₹350)</a></li>
+                        <li><a href="service.html#pant"><i class="fa-solid fa-scissors"></i> Formal Trousers (₹500)</a></li>
+                        <li><a href="service.html#suit"><i class="fa-solid fa-scissors"></i> Bespoke Suits (₹1,200)</a></li>
+                        <li><a href="service.html#blezer"><i class="fa-solid fa-scissors"></i> Royal Blazers (₹1,450)</a></li>
+                        <li><a href="service.html#lkurta"><i class="fa-solid fa-scissors"></i> Long Kurtas (₹580)</a></li>
+                        <li><a href="service.html#alternation"><i class="fa-solid fa-scissors"></i> Expert Alterations</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contact Workshop</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Jamadar Complex, Noubad, Bidar - 585401</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span><a href="tel:+918722273051">+91 8722273051</a> / <a href="tel:+916362729684">6362729684</a></span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>gurumenswear@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-credit-card"></i>
+                            <span>UPI (PhonePe / GPay / Paytm), Cash</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Guru Men's Wear (GMW). All rights reserved.</p>
+                <p>Crafted with pride &bull; Perfect Stitch, Perfect Fit</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="js/main.js"></script>
 </body>
 </html>

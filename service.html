@@ -3,97 +3,445 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guru Tailor</title>
-    <link rel="stylesheet" href="service.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Services & Pricing | Guru Men's Wear (GMW)</title>
+    <meta name="description" content="Explore custom tailoring services at Guru Men's Wear. Shirts, trousers, bespoke suits, blazers, kurtas, and alterations in Jamadar Complex, Noubad, Bidar.">
+    
+    <!-- Google Fonts & Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=20260929_01">
 </head>
 <body>
-      <img src="logo gmw.jpg" style="height:60px; width:120px;border-radius:10%; position:absolute;left:720px;top:30px;" >
-    <h1 id="greeting" label="greeting">WelCome To Guru Tailor</h1>
-    <div id="negation">
-        <a href="index.html">Home</a>
-        <a style="text-decoration: underline;" href="service.html">Services</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="booking.html">Booking</a>
-        <a href="ourcontact.html">Contact</a>
-</div>
 
-        <h1 style="position:absolute; top:220px;left:635px;width:28%;word-spacing:5px;letter-spacing:1.5px;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgba(0, 0, 0, 0.65);">Tailoring Services</h1>
-
-                <hr style=" border-radius:10px; position:absolute;top:320px;height: 5px;width:100%;background: linear-gradient(to bottom,#ff4500,#ff7043,rgba(255, 69, 0, 0.1));">
-
-
-
-       <p style="    position:absolute;
-    top: 350px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ff7346;
-    left: 570px;
-    font-size:large;
-    word-spacing: 5px;
-    letter-spacing: 1.5px;
-    width:44%;;
-    line-height: 2.3;">Crafted with Precision. Styled for Perfection.</p>
-
-
-
-
-
-
-        <div id="shirt"style="position:absolute;top:450px;left:15px;height:550px;width:99%;background-color:rgb(161, 161, 161);" >
-            <img src="n shirt.jpg" alt="shirt"style="position:absolute;left: 25px;top:25px;" >
-            <h3 style="position:absolute;top: 145px;left: 550px;">Crafted with exceptional attention to detail, this shirt reflects timeless elegance and refined taste. Designed for the modern gentleman, it blends comfort with effortless sophistication. Every stitch speaks of quality, precision, and premium craftsmanship. Perfect for formal occasions or elevated everyday wear, it leaves a lasting impression wherever you go.</h3>
-            <button onclick="window.location.href='order.html'" style="position: absolute;top: 490px;left: 150px;" >Book Now</button>
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <header class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="top-bar-item"><i class="fa-solid fa-location-dot"></i> Jamadar Complex, Noubad, Bidar - 585401</span>
+                <span class="top-bar-item"><i class="fa-solid fa-clock"></i> Mon-Sat: 9 AM - 8 PM | Sun: 9 AM - 2 PM</span>
+            </div>
+            <div class="top-bar-right">
+                <span class="top-bar-item"><i class="fa-solid fa-phone" style="color: #2563eb !important;"></i> <a href="tel:+918722273051">+91 8722273051</a> / <a href="tel:+916362729684">+91 6362729684</a></span>
+                <span class="top-bar-item"><i class="fa-brands fa-whatsapp" style="color: #25d366 !important;"></i> <a href="https://wa.me/918722273051" target="_blank">Chat on WhatsApp</a></span>
+            </div>
         </div>
+    </header>
 
+    <!-- STICKY NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand-logo">
+                <img src="logo gmw.jpg" alt="Guru Men's Wear Logo">
+                <div class="brand-text">
+                    <span class="brand-title">Guru Men's Wear</span>
+                    <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                </div>
+            </a>
 
-<div id="pant" style="position:absolute;top: 1020px;left: 15px;height:550px;width:99%;text-align:right;background-color:#b2d2d6;"> 
-    <img src="n pant.jpg" alt="pant" style="position:absolute;right: 25px;top:25px;">
-    <h3 style="position: absolute;top: 145px;right: 550px;">Tailored to perfection, our trousers redefine refined dressing with a flawless fit and structured silhouette. Crafted from premium fabrics, they offer lasting comfort without compromising on style. Designed for the modern gentleman, each pair reflects precision, durability, and understated elegance. Whether for formal occasions or smart casual looks, they elevate your presence effortlessly.</h3>
-     <button onclick="window.location.href='order.html'" style="position:absolute;top: 490px;right:150px;">Book Now</button>
-</div>
+            <!-- Desktop Menu (Single Line Aligned) -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="service.html" class="nav-link active">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="order.html" class="nav-link">Price & Order</a></li>
+                <li><a href="booking.html" class="nav-link">Book Fitting</a></li>
+                <li><a href="ourcontact.html" class="nav-link">Contact</a></li>
+            </ul>
 
+            <!-- ACTION BUTTONS: SIGN IN & SIGN UP (MOVED TO RIGHT) -->
+            <div class="nav-actions">
+                <a href="signin.html" class="btn btn-sm" style="background-color: #ff7346 !important; color: #ffffff !important; font-weight: 700; padding: 8px 18px; border-radius: 6px;"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+                <a href="signup.html" class="btn btn-sm" style="background-color: #ff7346 !important; color: #ffffff !important; font-weight: 700; padding: 8px 18px; border-radius: 6px;"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+                <button class="mobile-toggle" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-<div id="suit" style="position: absolute;top: 1590px;left:15px;height:550px;width:99%;background-color:rgb(161, 161, 161);">
-    <img src="n suit.jpg" alt="suit" style="position:absolute;left: 25px;top:25px;" >
-    <h3 style="position: absolute;top: 145px;left: 550px;">Built on a foundation of trust and craftsmanship, our suits are tailored to reflect confidence and distinction. Each piece is designed with precision, using premium fabrics that ensure comfort and durability. From sharp formal occasions to grand celebrations, our suits elevate your presence effortlessly. When you wear our suit, you don’t just dress well — you make a statement.</h3>
-     <button onclick="window.location.href='order.html'" style="position: absolute;top: 490px;left: 150px;">Book Now</button>
-</div>
-
-
-<div id="blezer" style="position: absolute;top: 2160px;left: 15px;height:550px;width:99%;text-align:right;background-color:#b2d2d6;">
-    <img src="n blezer.jpg" alt="blezer" style="position:absolute;right: 25px;top:25px;">
-    <h3 style="position: absolute;top: 145px;right: 550px;">Built on trust and refined craftsmanship, our blazers are designed to embody confidence and sophistication. Tailored with precision and crafted from premium fabrics, they offer a perfect balance of structure and comfort. Whether for business meetings or special occasions, each blazer enhances your presence with effortless elegance. When you choose our blazers, you choose style that speaks before you do.</h3>
-     <button onclick="window.location.href='order.html'" style="position:absolute;top: 490px;right:150px;">Book Now</button>
-</div>
-
-
-<div id="lkurta"  style="position: absolute;top: 2730px;left:15px;height:550px;width:99%;background-color:rgb(161, 161, 161);">
-    <img src="n l kurta.jpg"  alt="Lkurta" style="position:absolute;top:25px;left: 25px;">
-    <h3 style="position: absolute;top: 145px;left: 550px;">Built on the trust of our valued customers, our long kurtas reflect timeless tradition blended with modern elegance. Crafted from premium fabrics and tailored with precision, each piece offers unmatched comfort and graceful style. Designed for festive occasions and cultural celebrations, they carry a sense of dignity and sophistication. When you wear our long kurta, you don’t just dress traditionally — you embrace heritage with class.</h3>
-    <button  onclick="window.location.href='order.html'" style="position: absolute;top: 490px;left: 150px;">Book Now</button>
-
-</div>
-    <div id="skurta" style="position: absolute;top: 3300px;left: 15px;height:550px;width:99%;text-align:right;background-color:#b2d2d6;">
-        <img src="n s kurta.webp" alt="Skurta" style="position:absolute;top:25px;right:25px;">
-        <h3 style="position: absolute;top: 145px;right: 550px;">Built on the trust of our valued customers, our short kurtas combine traditional charm with modern simplicity. Crafted from premium fabrics and tailored with precision, they offer effortless comfort and refined style. Perfect for casual gatherings or festive moments, each piece reflects subtle sophistication. When you wear our short kurta, you carry confidence, culture, and class in every step.</h3>
-        <button onclick="window.location.href='order.html'" style="position:absolute;top: 490px;right:150px;" >Book Now</button>
-</div>
-                <hr style="border-radius: 10px; position: absolute;top: 3880px;  width: 100%;height: 5px;background: linear-gradient(to bottom,#ff4500,#ff7043,rgba(255, 69, 0, 0.1));">
-
-
-
-    
-    <div id="alternation">
-        <h3  style="position: absolute;top: 3900px;left: 420px;">A perfect fit brings confidence to every outfit. Our alteration service is designed to refine your garments for better comfort and appearance. We carefully adjust each detail to match your measurements. So you always step out looking sharp and confident.</h3>
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-content">
+            <div class="brand-logo" style="margin-bottom: 15px;">
+                <img src="logo gmw.jpg" alt="Guru Men's Wear" style="height: 48px;">
+                <div class="brand-text">
+                    <span class="brand-title" style="font-size: 1.15rem;">Guru Men's Wear</span>
+                    <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                </div>
+            </div>
+            <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+                <a href="signin.html" class="btn btn-auth-signin btn-sm" style="flex: 1;"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+                <a href="signup.html" class="btn btn-auth-signup btn-sm" style="flex: 1;"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+            </div>
+            <a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="service.html" class="mobile-nav-link active"><i class="fa-solid fa-shirt"></i> Services & Pricing</a>
+            <a href="gallery.html" class="mobile-nav-link"><i class="fa-solid fa-images"></i> Work & Shop Gallery</a>
+            <a href="order.html" class="mobile-nav-link"><i class="fa-solid fa-calculator"></i> Price & Order Calculator</a>
+            <a href="booking.html" class="mobile-nav-link"><i class="fa-solid fa-calendar-check"></i> Book an Appointment</a>
+            <a href="ourcontact.html" class="mobile-nav-link"><i class="fa-solid fa-location-dot"></i> Contact & Location</a>
+            <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 10px 0;">
+            <a href="https://wa.me/918722273051" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat with Master Tailor</a>
+            <a href="tel:+918722273051" class="btn btn-dark"><i class="fa-solid fa-phone"></i> Call Shop Now</a>
+        </div>
     </div>
 
+    <!-- PAGE HEADER -->
+    <header class="hero" style="padding: 60px 0 70px;">
+        <div class="container" style="text-align: center;">
+            <span class="badge badge-gold" style="margin-bottom: 14px;"><i class="fa-solid fa-scissors"></i> Master Tailoring Catalog</span>
+            <h1 class="hero-title" style="margin-bottom: 12px;">Crafted With Precision. <span>Styled For Distinction.</span></h1>
+            <p class="hero-subtitle" style="max-width: 700px; margin: 0 auto;">
+                Every garment is cut and tailored to your personal measurements. Explore our complete range of bespoke services, turnaround times, and fair transparent pricing.
+            </p>
+        </div>
+    </header>
 
-<div style="height:50px; width:50px;position: absolute; top:4000px;">
-    
-</div>
+    <!-- COMPLETE SERVICES CATALOG -->
+    <section class="section">
+        <div class="container">
 
+            <div class="services-grid">
+                <!-- Shirt -->
+                <div class="service-card" id="shirt">
+                    <div class="service-img-wrap">
+                        <img src="n shirt.jpg" alt="Tailored Formal & Casual Shirt">
+                        <div class="service-price-tag">₹<span>350</span> / piece</div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Custom Shirts</h3>
+                        <p class="service-desc">
+                            Crafted with exceptional attention to detail, reflecting timeless elegance and refined taste. Designed for the modern gentleman, blending breathable comfort with effortless sophistication. Perfect for corporate wear, festive gatherings, or casual outings.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Collar styles: Classic, Cutaway, Button-down, Mandarin</li>
+                            <li><i class="fa-solid fa-check"></i> Reinforced armholes & clean single-needle stitching</li>
+                            <li><i class="fa-solid fa-check"></i> Turnaround: <strong>2 - 3 Days</strong></li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="order.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-cart-plus"></i> Order Shirt Stitching</a>
+                            <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20want%20to%20inquire%20about%20Custom%20Shirt%20stitching." target="_blank" class="btn btn-whatsapp btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trouser / Pant -->
+                <div class="service-card" id="pant">
+                    <div class="service-img-wrap">
+                        <img src="n pant.jpg" alt="Tailored Formal Trousers and Chinos">
+                        <div class="service-price-tag">₹<span>500</span> / piece</div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Trousers & Pants</h3>
+                        <p class="service-desc">
+                            Tailored to perfection, our trousers redefine refined dressing with a flawless fit and structured silhouette. Crafted from premium fabrics, offering lasting comfort without compromising on style. Perfect drape around the thighs with zero fabric sagging.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Slim-fit, regular-fit, or classic pleat cut</li>
+                            <li><i class="fa-solid fa-check"></i> High-durability brass zippers and reinforced crotch</li>
+                            <li><i class="fa-solid fa-check"></i> Turnaround: <strong>2 - 3 Days</strong></li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="order.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-cart-plus"></i> Order Pant Stitching</a>
+                            <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20want%20to%20inquire%20about%20Pant%20stitching." target="_blank" class="btn btn-whatsapp btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bespoke Suit -->
+                <div class="service-card" id="suit">
+                    <div class="service-img-wrap">
+                        <img src="n suit.jpg" alt="Two piece and three piece bespoke suits">
+                        <div class="service-price-tag">₹<span>1,200</span> / piece</div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Bespoke Suits</h3>
+                        <p class="service-desc">
+                            Built on a foundation of trust and craftsmanship, our suits are tailored to reflect confidence and distinction. Each piece is designed with precision, using structured inner canvassing that ensures comfort, posture enhancement, and durability for grand celebrations.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> 2-Piece and 3-Piece (with waistcoat) configurations</li>
+                            <li><i class="fa-solid fa-check"></i> Premium inner silk lining & horn buttons</li>
+                            <li><i class="fa-solid fa-check"></i> Turnaround: <strong>5 - 7 Days</strong> (Trial fitting included)</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="order.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-cart-plus"></i> Order Suit Stitching</a>
+                            <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20want%20to%20inquire%20about%20Suit%20stitching." target="_blank" class="btn btn-whatsapp btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blazer -->
+                <div class="service-card" id="blezer">
+                    <div class="service-img-wrap">
+                        <img src="n blezer.jpg" alt="Tailored casual and formal blazers">
+                        <div class="service-price-tag">₹<span>1,450</span> / piece</div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Designer Blazers</h3>
+                        <p class="service-desc">
+                            Built on trust and refined craftsmanship, our blazers embody confidence and sophistication. Tailored with precision from rich wool, velvet, linen, or blends, providing a balanced shoulder line and comfortable chest room. Style that speaks before you do.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Notch or Peak lapel with felt undercollar</li>
+                            <li><i class="fa-solid fa-check"></i> Functional inside ticket and chest pockets</li>
+                            <li><i class="fa-solid fa-check"></i> Turnaround: <strong>4 - 6 Days</strong></li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="order.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-cart-plus"></i> Order Blazer Stitching</a>
+                            <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20want%20to%20inquire%20about%20Blazer%20stitching." target="_blank" class="btn btn-whatsapp btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Long Kurta -->
+                <div class="service-card" id="lkurta">
+                    <div class="service-img-wrap">
+                        <img src="n l kurta.jpg" alt="Traditional Long Kurta Pajama">
+                        <div class="service-price-tag">₹<span>580</span> / piece</div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Traditional Long Kurtas</h3>
+                        <p class="service-desc">
+                            Reflecting timeless tradition blended with modern elegance. Crafted with precision from cotton, silk, and brocade fabrics, each piece offers unmatched comfort and graceful drape for festive occasions, Eid, Diwali, weddings, and cultural celebrations.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Stand collar with crisp fused placket</li>
+                            <li><i class="fa-solid fa-check"></i> Deep side pockets with reinforced slit stitching</li>
+                            <li><i class="fa-solid fa-check"></i> Turnaround: <strong>2 - 3 Days</strong></li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="order.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-cart-plus"></i> Order Kurta Stitching</a>
+                            <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20want%20to%20inquire%20about%20Long%20Kurta%20stitching." target="_blank" class="btn btn-whatsapp btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Short Kurta -->
+                <div class="service-card" id="skurta">
+                    <div class="service-img-wrap">
+                        <img src="n s kurta.webp" alt="Casual Short Kurta for men">
+                        <div class="service-price-tag">₹<span>550</span> / piece</div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Smart Short Kurtas</h3>
+                        <p class="service-desc">
+                            Combining traditional charm with everyday simplicity. Tailored to hang neatly above the hip, perfect for casual outings or festive moments. Carry confidence, culture, and ease in every step when paired with jeans or cotton trousers.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Curved or straight shirt hem</li>
+                            <li><i class="fa-solid fa-check"></i> Roll-up button sleeve option</li>
+                            <li><i class="fa-solid fa-check"></i> Turnaround: <strong>2 - 3 Days</strong></li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="order.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-cart-plus"></i> Order Kurta Stitching</a>
+                            <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20want%20to%20inquire%20about%20Short%20Kurta%20stitching." target="_blank" class="btn btn-whatsapp btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safari Suit -->
+                <div class="service-card" id="safari">
+                    <div class="service-img-wrap">
+                        <img src="safari.webp" alt="Safari suit tailoring - bespoke 4-pocket executive safari">
+                        <div class="service-price-tag">₹<span>900</span> / piece</div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Safari Suits</h3>
+                        <p class="service-desc">
+                            The classic executive safari suit, engineered for authoritative presence, crisp structure, and all-day comfort in tropical weather. Tailored with flap pockets, shoulder epaulets, and structured collars.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> 4-pocket safari shirt with flap closures</li>
+                            <li><i class="fa-solid fa-check"></i> Back half-belt option for tapered look</li>
+                            <li><i class="fa-solid fa-check"></i> Turnaround: <strong>3 - 4 Days</strong></li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="order.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-cart-plus"></i> Order Safari Stitching</a>
+                            <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20want%20to%20inquire%20about%20Safari%20Suit%20stitching." target="_blank" class="btn btn-whatsapp btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alterations & Repair -->
+                <div class="service-card" id="alternation">
+                    <div class="service-img-wrap">
+                        <img src="pant-alternation.png" alt="Pant and garment alteration">
+                        <div class="service-price-tag">Starting <span>₹80</span></div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Alterations & Restyling</h3>
+                        <p class="service-desc">
+                            A perfect fit brings confidence to every outfit. Whether your ready-made clothes are too loose, too long, or need restyling, our alteration service refines them to match your exact physique seamlessly.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Waist in/out & length adjustment</li>
+                            <li><i class="fa-solid fa-check"></i> Tapering legs & sleeve shortening</li>
+                            <li><i class="fa-solid fa-check"></i> Turnaround: <strong>Same Day / 24 Hours</strong></li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="booking.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-calendar-check"></i> Book Alteration</a>
+                            <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20need%20urgent%20alteration%20service." target="_blank" class="btn btn-whatsapp btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Master Fabric Cutting & Pattern Making -->
+                <div class="service-card" id="cutting">
+                    <div class="service-img-wrap">
+                        <img src="t m s image.jpg" alt="Master fabric cutting and pattern drafting">
+                        <div class="service-price-tag">Custom Quote</div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Fabric Cutting & Pattern Drafting</h3>
+                        <p class="service-desc">
+                            Have your own fabric or want precision cutting done by our master cutter? We specialize in chalk blueprinting, grain alignment, and zero-waste pattern drafting so your fabric yields the finest garment possible.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Hand-drafted custom body patterns</li>
+                            <li><i class="fa-solid fa-check"></i> Perfect match for striped and plaid textiles</li>
+                            <li><i class="fa-solid fa-check"></i> Turnaround: <strong>1 - 2 Days</strong></li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="booking.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-handshake"></i> Consult Cutter</a>
+                            <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20want%20to%20discuss%20fabric%20cutting%20service." target="_blank" class="btn btn-whatsapp btn-sm"><i class="fa-brands fa-whatsapp"></i> Inquire</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section section-warm">
+        <div class="container container-narrow">
+            <div class="section-header">
+                <span class="section-tag">Frequently Asked Questions</span>
+                <h2 class="section-title">Common Tailoring Queries</h2>
+                <div class="divider-gold"></div>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fa-solid fa-question"></i></div>
+                    <div class="contact-details">
+                        <h4>Can I bring my own fabric?</h4>
+                        <p>Yes, absolutely! Most of our customers bring their favorite fabric from their chosen textile store. We inspect the cloth, recommend suitable styles, and tailor it to your exact measurements.</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fa-solid fa-stopwatch"></i></div>
+                    <div class="contact-details">
+                        <h4>How long does stitching take?</h4>
+                        <p>Standard turnaround for shirts and trousers is 2 to 3 days. Suits and blazers take 5 to 7 days including trial fitting. If you have an urgent function or wedding, express stitching is available on request.</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fa-solid fa-user-check"></i></div>
+                    <div class="contact-details">
+                        <h4>What if the garment needs a minor adjustment after trial?</h4>
+                        <p>We provide a <strong>100% Fit Guarantee</strong>. During your trial, if any seam, waist, or length requires fine-tuning, our master tailor adjusts it free of charge on the spot.</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon"><i class="fa-solid fa-credit-card"></i></div>
+                    <div class="contact-details">
+                        <h4>What payment methods do you accept?</h4>
+                        <p>We accept all UPI payments (PhonePe, Google Pay, Paytm, BHIM), debit/credit cards, and cash.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="order.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-calculator"></i> Calculate Your Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="floating-actions">
+        <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20would%20like%20to%20inquire%20about%20stitching%20services." target="_blank" class="float-btn float-whatsapp" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+918722273051" class="float-btn float-call" title="Call Shop" aria-label="Call Shop">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- LUXURY FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <img src="logo gmw.jpg" alt="GMW Logo" style="height: 48px; background: white; padding: 2px;">
+                        <div class="brand-text">
+                            <span class="brand-title">Guru Men's Wear</span>
+                            <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                        </div>
+                    </div>
+                    <p>
+                        Dedicated to the art of master fabric cutting and bespoke men's tailoring. Stitched to your unique measurements with premium craftsmanship in Jamadar Complex, Noubad, Bidar.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="service.html"><i class="fa-solid fa-angle-right"></i> Tailoring Services</a></li>
+                        <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Photo Gallery</a></li>
+                        <li><a href="order.html"><i class="fa-solid fa-angle-right"></i> Price & Order Sheet</a></li>
+                        <li><a href="booking.html"><i class="fa-solid fa-angle-right"></i> Book Fitting Slot</a></li>
+                        <li><a href="ourcontact.html"><i class="fa-solid fa-angle-right"></i> Contact & Location</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="service.html#shirt"><i class="fa-solid fa-scissors"></i> Custom Shirts (₹350)</a></li>
+                        <li><a href="service.html#pant"><i class="fa-solid fa-scissors"></i> Formal Trousers (₹500)</a></li>
+                        <li><a href="service.html#suit"><i class="fa-solid fa-scissors"></i> Bespoke Suits (₹1,200)</a></li>
+                        <li><a href="service.html#blezer"><i class="fa-solid fa-scissors"></i> Royal Blazers (₹1,450)</a></li>
+                        <li><a href="service.html#lkurta"><i class="fa-solid fa-scissors"></i> Long Kurtas (₹580)</a></li>
+                        <li><a href="service.html#alternation"><i class="fa-solid fa-scissors"></i> Expert Alterations</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contact Workshop</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Jamadar Complex, Noubad, Bidar - 585401</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span><a href="tel:+918722273051">+91 8722273051</a> / <a href="tel:+916362729684">6362729684</a></span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>gurumenswear@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-credit-card"></i>
+                            <span>UPI (PhonePe / GPay / Paytm), Cash</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Guru Men's Wear (GMW). All rights reserved.</p>
+                <p>Crafted with pride &bull; Perfect Stitch, Perfect Fit</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="js/main.js"></script>
 </body>
 </html>

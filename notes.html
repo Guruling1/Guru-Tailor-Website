@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guru Men's Wear (GMW) — Project Architecture & Interview Master Notes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #ff7346;
+            --accent-hover: #e55a2d;
+            --text-dark: #1e293b;
+            --text-muted: #64748b;
+            --bg-light: #f8fafc;
+            --border: #e2e8f0;
+            --card-bg: #ffffff;
+            --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            background: #f1f5f9;
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding: 30px 16px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .top-action-bar {
+            background: #fff7ed;
+            padding: 14px 28px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid var(--accent);
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn-print {
+            background: var(--accent);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(255,115,70,0.3);
+            transition: all 0.2s ease;
+        }
+
+        .btn-print:hover {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        .header {
+            padding: 36px 36px 24px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tag {
+            display: inline-block;
+            background: #fff3e0;
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 0.8rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            border: 1px solid rgba(255,115,70,0.3);
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+            line-height: 1.25;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin-bottom: 14px;
+        }
+
+        .meta-chips {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            font-size: 0.88rem;
+        }
+
+        .meta-chip {
+            background: var(--bg-light);
+            padding: 5px 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border);
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .content {
+            padding: 32px 36px;
+        }
+
+        .section {
+            margin-bottom: 36px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .callout {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: #1e3a8a;
+            margin-bottom: 18px;
+            line-height: 1.7;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 18px;
+            font-size: 0.92rem;
+        }
+
+        th, td {
+            padding: 12px 14px;
+            text-align: left;
+            border: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background: var(--bg-light);
+        }
+
+        .card {
+            background: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 18px;
+            margin-bottom: 16px;
+        }
+
+        .card-title {
+            font-size: 1.05rem;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        ul {
+            padding-left: 22px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin-bottom: 6px;
+            color: var(--text-dark);
+        }
+
+        .qa-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 14px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        }
+
+        .qa-q {
+            background: #f1f5f9;
+            padding: 12px 16px;
+            font-weight: 700;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .qa-a {
+            padding: 14px 16px;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .resume-snippet {
+            background: #0f172a;
+            color: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.88rem;
+            line-height: 1.7;
+            overflow-x: auto;
+            position: relative;
+        }
+
+        code {
+            background: #e2e8f0;
+            color: #0f172a;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.88em;
+            font-family: monospace;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                border: none;
+                max-width: 100%;
+            }
+            .top-action-bar {
+                display: none;
+            }
+            .qa-card, .card {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="top-action-bar">
+        <div>
+            <strong style="color: var(--primary);"><i class="fa-solid fa-file-shield" style="color: var(--accent);"></i> Project Interview & Resume Master Guide</strong>
+            <span style="font-size: 0.85rem; color: var(--text-muted); margin-left: 8px;">Guru Men's Wear (GMW)</span>
+        </div>
+        <button onclick="window.print()" class="btn-print">
+            <i class="fa-solid fa-print"></i> Print / Save as PDF
+        </button>
+    </div>
+
+    <div class="header">
+        <span class="tag">Resume & Technical Interview Reference</span>
+        <h1>Guru Men's Wear (GMW)</h1>
+        <p class="subtitle">Bespoke Tailoring Digital Storefront & Real-Time Fitting Booking System</p>
+        
+        <div class="meta-chips">
+            <div class="meta-chip"><i class="fa-solid fa-code" style="color: var(--accent);"></i> <strong>Languages:</strong> HTML5, CSS3, JavaScript (ES6+)</div>
+            <div class="meta-chip"><i class="fa-brands fa-whatsapp" style="color: #25d366;"></i> <strong>Integrations:</strong> WhatsApp Click-to-Chat API</div>
+            <div class="meta-chip"><i class="fa-solid fa-map-location-dot" style="color: #3b82f6;"></i> <strong>Location:</strong> Jamadar Complex, Noubad, Bidar</div>
+            <div class="meta-chip"><i class="fa-solid fa-bolt" style="color: #eab308;"></i> <strong>Architecture:</strong> Zero-dependency Vanilla Web Stack</div>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- 1. ELEVATOR PITCH -->
+        <div class="section">
+            <h2 class="section-title"><i class="fa-solid fa-bullhorn" style="color: var(--accent);"></i> 1. The 60-Second Elevator Pitch (Interview Intro)</h2>
+            <div class="callout">
+                "Guru Men's Wear (GMW) is a bespoke menswear web application developed to transform an established 30-year legacy tailoring business into a high-converting digital storefront. I designed and engineered a full-featured multi-page web platform featuring a real-time reactive cost calculator, dynamic garment price estimator, filterable portfolio lightbox gallery, appointment booking, and an automated WhatsApp API bridge for instant order serialization without high payment gateway friction. Built with clean, zero-dependency HTML5, modern CSS3 (Grid/Flexbox), and Vanilla JavaScript, delivering sub-400ms load times and 100% mobile responsiveness."
+            </div>
+        </div>
+
+        <!-- 2. TECH STACK TABLE -->
+        <div class="section">
+            <h2 class="section-title"><i class="fa-solid fa-layer-group" style="color: var(--accent);"></i> 2. Complete Languages & Technologies Used</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Layer / Technology</th>
+                        <th style="width: 25%;">Exact Version / Tool</th>
+                        <th>Role & Implementation in Project</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Markup & Semantics</strong></td>
+                        <td>HTML5</td>
+                        <td>Structured all 8 pages using semantic elements (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>), form validation, and custom data attributes (<code>data-price</code>, <code>data-category</code>).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Styles & Design System</strong></td>
+                        <td>Modern CSS3</td>
+                        <td>Engineered a custom design token system (CSS Variables for <code>#ff7346</code>, <code>#0f172a</code>), 12-column responsive CSS Grid & Flexbox, terminal orange borders, and fluid typography.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Client-Side Engine</strong></td>
+                        <td>Vanilla JavaScript (ES6+)</td>
+                        <td>Real-time mathematical calculations, live quantity steppers (+/-), active state class toggling, DOM event delegation, modal lightbox controls, and mobile navigation drawer.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Messaging & Checkout</strong></td>
+                        <td>WhatsApp Click-to-Chat API</td>
+                        <td>Serializes customer details, fabric arrangement, garment line items, quantities, and calculated grand total into a URL-encoded receipt string sent directly to the master tailor.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Geo & Directions</strong></td>
+                        <td>Google Maps Geolocation API</td>
+                        <td>Mapped exact physical coordinates <code>17.935206, 77.473038</code> at Jamadar Complex, Noubad, Bidar with one-click turn-by-turn navigation link.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Icons & Fonts</strong></td>
+                        <td>Font Awesome 6 + Google Fonts</td>
+                        <td>SVG icon badges, call/chat triggers, and typography pairing of Playfair Display and Montserrat.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 3. DETAILED CHANGELOG -->
+        <div class="section">
+            <h2 class="section-title"><i class="fa-solid fa-list-check" style="color: var(--accent);"></i> 3. What Was Added & Changed (Detailed Engineering Changelog)</h2>
+            
+            <div class="card">
+                <div class="card-title"><i class="fa-solid fa-palette" style="color: var(--accent);"></i> A. Design System & Modern UI Facelift</div>
+                <ul>
+                    <li>Rebuilt the website from an older static design into a trending bespoke luxury atelier theme.</li>
+                    <li>Created unified CSS variables for the brand signature light orange color (<code>#ff7346</code>).</li>
+                    <li>Added full orange terminal boundary lines: 3px solid under navbar, 4px solid above footer, and section dividers.</li>
+                    <li>Restructured navigation bar: Logo on far left, generous spacing between links (18px), and Sign In/Sign Up buttons shifted to the far right.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><i class="fa-solid fa-calculator" style="color: var(--accent);"></i> B. Interactive Live Order & Price Calculator (order.html)</div>
+                <ul>
+                    <li>Engineered interactive quantity steppers (+/-) bound to dynamic <code>data-price</code> attributes.</li>
+                    <li>Implemented real-time JavaScript calculation: as quantities change, line items and grand total update instantly with Indian Rupee formatting (<code>₹</code>).</li>
+                    <li>Added customer intake fields: Customer Name, Phone Number, Fabric Arrangement, and Special Tailoring Notes.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><i class="fa-brands fa-whatsapp" style="color: #25d366;"></i> C. WhatsApp Checkout & Order Serialization Bridge</div>
+                <ul>
+                    <li>Bypassed costly third-party payment gateways with a direct WhatsApp order serialization bridge.</li>
+                    <li>Formats an itemized receipt containing garments, quantities, unit prices, grand total, and notes, encoded via <code>encodeURIComponent()</code>.</li>
+                    <li>Styled the submit order button with a vibrant <code>#ff7346</code> gradient, box-shadow glow, white bold text, and a circular green WhatsApp badge.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><i class="fa-solid fa-images" style="color: var(--accent);"></i> D. Filterable Gallery & Full-Screen Lightbox (gallery.html)</div>
+                <ul>
+                    <li>Created responsive gallery category filters (Suits & Blazers, Shirts & Trousers, Kurtas & Ethnic, Workshop Craft).</li>
+                    <li>Added interactive Lightbox Modal with image zoom, caption display, click-outside dismissal, and keyboard <code>Escape</code> support.</li>
+                    <li>Integrated uploaded high-resolution Safari Suit photo (<code>safari.webp</code>).</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><i class="fa-solid fa-location-dot" style="color: var(--accent);"></i> E. Atelier Showcase & Location Update (index.html, ourcontact.html)</div>
+                <ul>
+                    <li>Updated shop location site-wide to <strong>Jamadar Complex, Noubad, Bidar - 585401</strong>.</li>
+                    <li>Embedded GPS coordinates <strong>17.935206, 77.473038</strong>.</li>
+                    <li>Built a 2-column Atelier Showcase on the home page: Left side displays official visiting card with Call & WhatsApp buttons; right side displays the location map photo, timings, and directions link.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-title"><i class="fa-solid fa-user-lock" style="color: var(--accent);"></i> F. Authentication Pages (signin.html & signup.html)</div>
+                <ul>
+                    <li>Split-screen layout: Left side showcases the enlarged shop visiting card; right side contains clean, responsive input fields.</li>
+                    <li>Mobile responsive collapse into single-column layout on mobile viewports.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 4. INTERVIEW QUESTIONS & ANSWERS -->
+        <div class="section">
+            <h2 class="section-title"><i class="fa-solid fa-circle-question" style="color: var(--accent);"></i> 4. Top Interview Questions & Model Answers</h2>
+
+            <div class="qa-card">
+                <div class="qa-q">Q1: Why did you use Vanilla JavaScript instead of React, Angular, or Vue?</div>
+                <div class="qa-a">
+                    <strong>Answer:</strong> "For a localized bespoke tailoring website, loading a 150KB+ React bundle causes unnecessary overhead and slower initial load times on mobile 4G/3G networks. Vanilla ES6+ provides zero-dependency lightweight code, sub-400ms First Contentful Paint (FCP), and direct DOM control. For reactive features like our live price calculator and modal lightbox, modern ES6+ handles state cleanly without framework bloat."
+                </div>
+            </div>
+
+            <div class="qa-card">
+                <div class="qa-q">Q2: How does the live order calculator work technically?</div>
+                <div class="qa-a">
+                    <strong>Answer:</strong> "Each garment card stores its unit rate in a HTML5 <code>data-price</code> attribute. When a user clicks the plus/minus stepper or inputs a number, an event listener calls <code>calculateTotal()</code>. The function iterates over all garment cards using <code>querySelectorAll()</code>, reads the quantity, computes the item total, updates the DOM subtotal, formats the grand total using <code>toLocaleString('en-IN')</code>, and toggles an active <code>.has-qty</code> CSS class for visual feedback."
+                </div>
+            </div>
+
+            <div class="qa-card">
+                <div class="qa-q">Q3: Why use WhatsApp for ordering instead of a standard e-commerce payment gateway?</div>
+                <div class="qa-a">
+                    <strong>Answer:</strong> "Bespoke tailoring is fundamentally personalized: master tailors need to confirm physical measurements, discuss fabric drape, and schedule fitting trials before cutting expensive fabrics. A rigid payment gateway introduces checkout friction and transaction fees. By bridging the order to WhatsApp, the master tailor receives a structured digital invoice while immediately establishing a 1-on-1 direct customer relationship."
+                </div>
+            </div>
+
+            <div class="qa-card">
+                <div class="qa-q">Q4: How did you ensure responsive design across devices?</div>
+                <div class="qa-a">
+                    <strong>Answer:</strong> "I applied a mobile-first responsive strategy. For cards and galleries, I used CSS Grid with <code>repeat(auto-fit, minmax(280px, 1fr))</code>, allowing cards to wrap automatically without requiring rigid media query breakpoints. For navigation, I engineered an off-canvas mobile drawer with a hamburger toggle that animates via CSS transforms."
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. RESUME SNIPPET -->
+        <div class="section">
+            <h2 class="section-title"><i class="fa-solid fa-file-lines" style="color: var(--accent);"></i> 5. Ready-to-Use Resume Section (Copy & Paste)</h2>
+            <div class="resume-snippet">
+<strong>Guru Men's Wear (GMW) — Bespoke Tailoring Web Platform</strong> | <em>HTML5, CSS3, JavaScript (ES6+), Web APIs</em><br><br>
+• Designed and deployed a responsive multi-page web platform digitizing bespoke tailoring operations for an atelier in Bidar.<br>
+• Engineered a real-time reactive order and stitching cost calculator featuring dynamic quantity steppers and DOM dataset bindings.<br>
+• Built an automated WhatsApp API checkout bridge, serializing customer garments, tailoring notes, and grand totals into clean URI receipts.<br>
+• Implemented an interactive filterable product gallery with an accessible full-screen Lightbox modal supporting keyboard navigation.<br>
+• Achieved 100% cross-device responsiveness and sub-400ms load times using CSS Grid/Flexbox and CSS Custom Properties with zero external JS dependencies.
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

@@ -3,123 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking</title>
-    <link rel="stylesheet" href="booking.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tailoring Appointment & Fitting | Guru Men's Wear (GMW)</title>
+    <meta name="description" content="Schedule your custom measurement fitting and styling consultation at Guru Men's Wear in Jamadar Complex, Noubad, Bidar.">
+    
+    <!-- Google Fonts & Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=20260929_01">
 </head>
 <body>
-     <img src="logo gmw.jpg" style="height:60px; width:120px;border-radius:10%; position:absolute;left:720px;top:30px;" >
-    <h1 id="greeting" label="greeting">WelCome To Guru Tailor</h1>
-    <div id="negation">
-        <a href="index.html">Home</a>
-        <a href="service.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a style="text-decoration: underline;" href="booking.html">Booking</a>
-        <a href="ourcontact.html">Contact</a>
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <header class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="top-bar-item"><i class="fa-solid fa-location-dot"></i> Jamadar Complex, Noubad, Bidar - 585401</span>
+                <span class="top-bar-item"><i class="fa-solid fa-clock"></i> Mon-Sat: 9 AM - 8 PM | Sun: 9 AM - 2 PM</span>
+            </div>
+            <div class="top-bar-right">
+                <span class="top-bar-item"><i class="fa-solid fa-phone" style="color: #2563eb !important;"></i> <a href="tel:+918722273051">+91 8722273051</a> / <a href="tel:+916362729684">+91 6362729684</a></span>
+                <span class="top-bar-item"><i class="fa-brands fa-whatsapp" style="color: #25d366 !important;"></i> <a href="https://wa.me/918722273051" target="_blank">Chat on WhatsApp</a></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- STICKY NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand-logo">
+                <img src="logo gmw.jpg" alt="Guru Men's Wear Logo">
+                <div class="brand-text">
+                    <span class="brand-title">Guru Men's Wear</span>
+                    <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu (Single Line Aligned) -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="service.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="order.html" class="nav-link">Price & Order</a></li>
+                <li><a href="booking.html" class="nav-link active">Book Fitting</a></li>
+                <li><a href="ourcontact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- ACTION BUTTONS: SIGN IN & SIGN UP (MOVED TO RIGHT) -->
+            <div class="nav-actions">
+                <a href="signin.html" class="btn btn-sm" style="background-color: #ff7346 !important; color: #ffffff !important; font-weight: 700; padding: 8px 18px; border-radius: 6px;"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+                <a href="signup.html" class="btn btn-sm" style="background-color: #ff7346 !important; color: #ffffff !important; font-weight: 700; padding: 8px 18px; border-radius: 6px;"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+                <button class="mobile-toggle" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-content">
+            <div class="brand-logo" style="margin-bottom: 15px;">
+                <img src="logo gmw.jpg" alt="Guru Men's Wear" style="height: 48px;">
+                <div class="brand-text">
+                    <span class="brand-title" style="font-size: 1.15rem;">Guru Men's Wear</span>
+                    <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                </div>
+            </div>
+            <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+                <a href="signin.html" class="btn btn-auth-signin btn-sm" style="flex: 1;"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+                <a href="signup.html" class="btn btn-auth-signup btn-sm" style="flex: 1;"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+            </div>
+            <a href="index.html" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="service.html" class="mobile-nav-link"><i class="fa-solid fa-shirt"></i> Services & Pricing</a>
+            <a href="gallery.html" class="mobile-nav-link"><i class="fa-solid fa-images"></i> Work & Shop Gallery</a>
+            <a href="order.html" class="mobile-nav-link"><i class="fa-solid fa-calculator"></i> Price & Order Calculator</a>
+            <a href="booking.html" class="mobile-nav-link active"><i class="fa-solid fa-calendar-check"></i> Book an Appointment</a>
+            <a href="ourcontact.html" class="mobile-nav-link"><i class="fa-solid fa-location-dot"></i> Contact & Location</a>
+            <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 10px 0;">
+            <a href="https://wa.me/918722273051" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat with Master Tailor</a>
+            <a href="tel:+918722273051" class="btn btn-dark"><i class="fa-solid fa-phone"></i> Call Shop Now</a>
+        </div>
     </div>
 
-
-         <h1 style="position:absolute; top:225px;left:538px;word-spacing:5px;letter-spacing:1.5px;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgba(0, 0, 0, 0.65);">Book Your Tailor Appointment</h1>
-
-        
-        <hr style=" border-radius:10px; position:relative;top:305px;height: 5px;background: linear-gradient(to bottom,#ff4500,#ff7043,rgba(255, 69, 0, 0.1));">
-
-        <p style="    position: absolute;
-    top: 340px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ff7346;
-    left: 543px;
-    font-size:large;
-    word-spacing: 5px;
-    letter-spacing: 1.5px;
-    width: 882px;
-    line-height: 2.3;">Tailored Just for You: Schedule Your Visit Today</p>
-
-
-        <div id="mimage" style="height:530px;width:100%;position:absolute;top:435px;background-color:#e6cf93;">
-            <img id="imgone" src="b 1 measure.jpg">
-            <h4 style="    position: absolute;top: 20px;left: 650px;font-weight: bold;font-size:20px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; word-spacing: 4px;
-    letter-spacing: 1.3px;color: rgba(0, 0, 0, 0.8);">Easy Online Booking</h4>
-
-
-    <h4 style="    position: absolute;top: 145px;left: 690px;font-size:20px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; word-spacing: 4px;
-    letter-spacing: 1.3px;color: rgba(0, 0, 0, 0.8);width: 650px;
-    text-align: center;">"Our Streamlined online booking system allows you 
-    to choose a convenient time for your tailoring appointment.
-        Simply fill out the form with your Details, and we will confirm your appointment promptly to 
-        ensure a hassel-free experince"</h4>
-
-<input 
-    type="text" 
-    placeholder="Schedule Date"
-    onfocus="(this.type='date')" 
-    style="width:670px;height:50px; position:absolute;left:680px;top:335px;"> 
-    
-<input 
-    type="text" 
-    placeholder="Schedule Time"
-    onfocus="(this.type='time')" 
-    style="width:670px;height:50px; position:absolute;left:680px;top:400px;">
-    <button onclick="window.location.href='order.html'" style="position:absolute;top: 470px;right:420px;">Book Now</button>
+    <!-- PAGE HERO -->
+    <header class="hero" style="padding: 60px 0 70px;">
+        <div class="container" style="text-align: center;">
+            <span class="badge badge-gold" style="margin-bottom: 14px;"><i class="fa-solid fa-calendar-days"></i> Schedule Your Visit</span>
+            <h1 class="hero-title" style="margin-bottom: 12px;">Book Your <span>Tailoring Appointment</span></h1>
+            <p class="hero-subtitle" style="max-width: 700px; margin: 0 auto;">
+                Tailored just for you. Reserve a dedicated fitting slot or style consultation with our master cutter for a seamless, hassle-free experience.
+            </p>
         </div>
+    </header>
 
-        <hr style=" border-radius:10px; position:relative;top:1000px;height: 5px;background: linear-gradient(to bottom,#ff4500,#ff7043,rgba(255, 69, 0, 0.1));">
+    <!-- BOOKING APPOINTMENT FORM -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Left: Booking Form Card -->
+                <div class="calc-wrapper" style="box-shadow: var(--shadow-lg);">
+                    <div class="calc-header" style="background: var(--dark-gradient); padding: 25px 20px;">
+                        <h3 style="font-size: 1.45rem;"><i class="fa-solid fa-calendar-check" style="color: var(--accent);"></i> Easy Online Appointment</h3>
+                        <p style="font-size: 0.9rem;">Choose your convenient time & receive instant WhatsApp confirmation.</p>
+                    </div>
 
-        <h1 style="position:absolute; top:1070px;left:520px;word-spacing:5px;letter-spacing:1.5px;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; color: rgba(0, 0, 0, 0.65);">Schedule Your Custom Consultation</h1>
+                    <div class="calc-body" style="padding: 28px 24px;">
+                        <form id="bookingForm">
+                            <div class="order-form-grid">
+                                <div class="form-group">
+                                    <label for="bookName"><i class="fa-solid fa-user"></i> Your Full Name *</label>
+                                    <input type="text" id="bookName" class="form-control" placeholder="e.g. Anand Kulkarni" required>
+                                </div>
 
-        <hr style=" border-radius:10px; position:relative;top:1150px;height: 5px;background: linear-gradient(to bottom,#ff4500,#ff7043,rgba(255, 69, 0, 0.1));">
+                                <div class="form-group">
+                                    <label for="bookPhone"><i class="fa-solid fa-phone"></i> Phone Number *</label>
+                                    <input type="tel" id="bookPhone" class="form-control" placeholder="e.g. 9876543210" required>
+                                </div>
+                            </div>
 
-    <p style="    position: absolute;
-        top: 1210px;
-        font-family: Arial, Helvetica, sans-serif;
-        color:#ff7346;
-        left: 570px;
-        font-size:large;
-        word-spacing: 5px;
-        letter-spacing: 1.5px;
-        width: 882px;
-        line-height: 2.3;">Get Expert Guidance for Your Tailoring Needs</p>
+                            <div class="form-group">
+                                <label for="bookService"><i class="fa-solid fa-scissors"></i> Service Required</label>
+                                <select id="bookService" class="form-control">
+                                    <option value="Custom Shirts (₹350)">Custom Shirts (₹350)</option>
+                                    <option value="Formal Trousers / Pants (₹500)">Formal Trousers / Pants (₹500)</option>
+                                    <option value="Bespoke Suit (₹1,200)">Bespoke Suit (₹1,200)</option>
+                                    <option value="Designer Blazer (₹1,450)">Designer Blazer (₹1,450)</option>
+                                    <option value="Traditional Long Kurta (₹580)">Traditional Long Kurta (₹580)</option>
+                                    <option value="Casual Short Kurta (₹550)">Casual Short Kurta (₹550)</option>
+                                    <option value="Safari Suit (₹900)">Safari Suit (₹900)</option>
+                                    <option value="Alteration & Fitting Adjustment">Alteration & Fitting Adjustment</option>
+                                    <option value="Fabric Cutting & Style Consultation">Fabric Cutting & Style Consultation</option>
+                                </select>
+                            </div>
 
-    <div id="mimage" style="height:530px;width:100%;position:absolute;top:1305px; background-color:#dccda8;">
-            <img id="imgone" src="2 men t shop.png">
-            <h4 style="    position: absolute;top: 20px;left: 650px;font-weight: bold;font-size:20px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; word-spacing: 4px;
-    letter-spacing: 1.3px;color: rgba(0, 0, 0, 0.8);">Personalized Tailoring Consultation</h4>
+                            <div class="order-form-grid">
+                                <div class="form-group">
+                                    <label for="bookDate"><i class="fa-solid fa-calendar"></i> Preferred Date</label>
+                                    <input type="date" id="bookDate" class="form-control" required>
+                                </div>
 
+                                <div class="form-group">
+                                    <label for="bookTime"><i class="fa-solid fa-clock"></i> Preferred Time Slot</label>
+                                    <select id="bookTime" class="form-control">
+                                        <option value="Morning (9:00 AM - 12:00 PM)">Morning (9:00 AM - 12:00 PM)</option>
+                                        <option value="Afternoon (12:00 PM - 4:00 PM)">Afternoon (12:00 PM - 4:00 PM)</option>
+                                        <option value="Evening (4:00 PM - 8:00 PM)">Evening (4:00 PM - 8:00 PM)</option>
+                                    </select>
+                                </div>
+                            </div>
 
-    <h4 style="    position: absolute;top: 145px;left: 690px;font-size:20px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; word-spacing: 4px;
-    letter-spacing: 1.3px;color: rgba(0, 0, 0, 0.8);width: 640px;
-    text-align: center;">"During our Personalized Consultation, our expert tailors
-    will discuss your specific needs and perference. this
-    one-on-one session is designed to help you choose the
-    right fabrics, styles, and fits, ensuring that your tailor garment are a perfect match for you."  </h4>
+                            <div class="form-group">
+                                <label for="bookNotes"><i class="fa-solid fa-message"></i> Special Requests or Fabric Type</label>
+                                <textarea id="bookNotes" class="form-control" rows="3" placeholder="Tell us if you have wedding dates, urgency, or specific styles..."></textarea>
+                            </div>
 
-    <input 
-    type="text" 
-    placeholder="Schedule Date"
-    onfocus="(this.type='date')" 
-    style="width:670px;height:50px; position:absolute;left:680px;top:335px;">
+                            <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%; font-size: 1.05rem; margin-top: 10px;">
+                                <i class="fa-brands fa-whatsapp"></i> Confirm Appointment via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
 
+                <!-- Right: Measurement & Consultation Info -->
+                <div style="display: flex; flex-direction: column; gap: 24px;">
+                    <div style="background: white; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+                        <img src="b 1 measure.jpg" alt="Master tailor taking measurements" style="width: 100%; height: 260px; object-fit: cover;">
+                        <div style="padding: 24px;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--primary); margin-bottom: 8px;">The 25-Point Measurement Guarantee</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                                During your visit, our master tailor records your exact proportions: collar posture, shoulder slope, armhole clearance, torso curvature, and leg break. This bespoke blueprint ensures your garments feel natural and look razor-sharp.
+                            </p>
+                        </div>
+                    </div>
 
-<input 
-    type="text" 
-    placeholder="Schedule Time"
-    onfocus="(this.type='time')" 
-    style="width:670px;height:50px; position:absolute;left:680px;top:400px;">
+                    <div style="background: white; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+                        <img src="2 men t shop.png" alt="In-person tailoring consultation" style="width: 100%; height: 260px; object-fit: cover;">
+                        <div style="padding: 24px;">
+                            <h4 style="font-family: var(--font-heading); font-size: 1.4rem; color: var(--primary); margin-bottom: 8px;">Personalized Tailoring Consultation</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                                "During our personalized consultation, our expert tailors discuss your specific styling needs and preferences. This one-on-one session helps you choose the right fabrics, drape, and pocket/collar cuts to ensure your tailored outfit is a perfect match."
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
-    <button onclick="window.location.href='order.html'" style="position:absolute;top: 470px;right:420px;">Book Now</button>
+            </div>
         </div>
+    </section>
 
-        <hr style=" border-radius:10px; position:relative;top:1850px;height: 5px;background: linear-gradient(to bottom,#ff4500,#ff7043,rgba(255, 69, 0, 0.1));">
-
- <h3 style="position:absolute;top:1900px;text-align:center;    height: 50px;width: 1200px;margin-left: 150px; word-spacing: 4px;letter-spacing: 1.2px;">Our work reflects a commitment 
-        to precision, quality, and timeless craftsmanship. Every garment is carefully tailored with attention to detail, ensuring a perfect balance of comfort and elegance. We select premium
-         fabrics and focus on flawless finishing to deliver exceptional results. Each stitch is placed with care, creating outfits that not only look refined but feel exceptional to wear. Our 
-         dedication to excellence has earned the trust of our customers, making every piece a symbol of confidence and style.</h3>
-
-        <div style="height:50px;width:50px;position:absolute;top:2020px;">
-
+    <!-- HERITAGE COMMITMENT QUOTE -->
+    <section class="section section-warm">
+        <div class="container container-narrow" style="text-align: center;">
+            <i class="fa-solid fa-quote-left" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 20px;"></i>
+            <h3 style="font-family: var(--font-heading); font-size: 1.65rem; color: var(--primary); line-height: 1.5; margin-bottom: 20px;">
+                "Our work reflects a commitment to precision, quality, and timeless craftsmanship. Every garment is carefully tailored with attention to detail, ensuring a perfect balance of comfort and elegance. Each stitch is placed with care, creating outfits that not only look refined but feel exceptional to wear."
+            </h3>
+            <span style="font-size: 0.95rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em;">
+                &mdash; Master Tailor, Guru Men's Wear
+            </span>
         </div>
+    </section>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="floating-actions">
+        <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="float-btn float-whatsapp" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+918722273051" class="float-btn float-call" title="Call Shop" aria-label="Call Shop">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- LUXURY FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <img src="logo gmw.jpg" alt="GMW Logo" style="height: 48px; background: white; padding: 2px;">
+                        <div class="brand-text">
+                            <span class="brand-title">Guru Men's Wear</span>
+                            <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                        </div>
+                    </div>
+                    <p>
+                        Dedicated to the art of master fabric cutting and bespoke men's tailoring. Stitched to your unique measurements with premium craftsmanship in Jamadar Complex, Noubad, Bidar.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="service.html"><i class="fa-solid fa-angle-right"></i> Tailoring Services</a></li>
+                        <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Photo Gallery</a></li>
+                        <li><a href="order.html"><i class="fa-solid fa-angle-right"></i> Price & Order Sheet</a></li>
+                        <li><a href="booking.html"><i class="fa-solid fa-angle-right"></i> Book Fitting Slot</a></li>
+                        <li><a href="ourcontact.html"><i class="fa-solid fa-angle-right"></i> Contact & Location</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="service.html#shirt"><i class="fa-solid fa-scissors"></i> Custom Shirts (₹350)</a></li>
+                        <li><a href="service.html#pant"><i class="fa-solid fa-scissors"></i> Formal Trousers (₹500)</a></li>
+                        <li><a href="service.html#suit"><i class="fa-solid fa-scissors"></i> Bespoke Suits (₹1,200)</a></li>
+                        <li><a href="service.html#blezer"><i class="fa-solid fa-scissors"></i> Royal Blazers (₹1,450)</a></li>
+                        <li><a href="service.html#lkurta"><i class="fa-solid fa-scissors"></i> Long Kurtas (₹580)</a></li>
+                        <li><a href="service.html#alternation"><i class="fa-solid fa-scissors"></i> Expert Alterations</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contact Workshop</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Jamadar Complex, Noubad, Bidar - 585401</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span><a href="tel:+918722273051">+91 8722273051</a> / <a href="tel:+916362729684">6362729684</a></span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>gurumenswear@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-credit-card"></i>
+                            <span>UPI (PhonePe / GPay / Paytm), Cash</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Guru Men's Wear (GMW). All rights reserved.</p>
+                <p>Crafted with pride &bull; Perfect Stitch, Perfect Fit</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="js/main.js"></script>
 </body>
 </html>

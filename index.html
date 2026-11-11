@@ -3,31 +3,763 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homepage.css">
-    <title>Guru Tailor</title>
+    <title>Guru Men's Wear | Master Tailoring & Bespoke Stitching | Bidar</title>
+    <meta name="description" content="Guru Men's Wear - Expert fabric cutting and bespoke tailoring in Jamadar Complex, Noubad, Bidar - 585401. Perfect fit suits, shirts, trousers, safaris, and traditional kurtas.">
     
+    <!-- Google Fonts & Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=20260929_01">
 </head>
 <body>
-    <div class="auth-buttons">
-    <a href="signin.html" class="btn" style="background-color:orangered;">Sign In</a>
-    <a href="signup.html" class="btn" style="background-color:orangered;">Sign Up</a>
-</div>   
-    <img src="logo gmw.jpg" style="height:60px; width:120px;border-radius:10%; position:absolute;left:720px;top:30px;" >
-    <h1 id="greeting" label="greeting">WelCome To Guru Tailor</h1>
-    <div id="negation">
-        <a style="text-decoration: underline;" href="index.html">Home</a>
-        <a href="service.html">Services</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="booking.html">Booking</a>
-        <a href="ourcontact.html">Contact</a>
-</div>
-    <div id="body">
-        <h1 style="height:36px; position:relative;top:60px;">Guru Mens Wear</h1>
-        <h2 style="font-weight: bold ;position:relative;top:70px;">Perfect Stitch, Perfect Fit</h2>
-        <h3 style="height:20px; position:relative;top:80px;left:90px;width:89%">Welcome to our men’s tailor shop, where precision meets timeless style. We specialize in crafting refined garments tailored to your individual fit and personality. From custom suits to expert alterations, our dedication ensures you step out with confidence and class for every occasion.</h3>
-    
-        <button onclick="window.location.href='order.html'" style="background-color:orangered;width:150px;height:50px;border-radius:5%;  color: white;font-size: large;position:relative;top: 140px;">Book Now</button>
 
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <header class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="top-bar-item"><i class="fa-solid fa-location-dot"></i> Jamadar Complex, Noubad, Bidar - 585401</span>
+                <span class="top-bar-item"><i class="fa-solid fa-clock"></i> Mon-Sat: 9 AM - 8 PM | Sun: 9 AM - 2 PM</span>
+            </div>
+            <div class="top-bar-right">
+                <span class="top-bar-item"><i class="fa-solid fa-phone" style="color: #2563eb !important;"></i> <a href="tel:+918722273051">+91 8722273051</a> / <a href="tel:+916362729684">+91 6362729684</a></span>
+                <span class="top-bar-item"><i class="fa-brands fa-whatsapp" style="color: #25d366 !important;"></i> <a href="https://wa.me/918722273051" target="_blank">Chat on WhatsApp</a></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- STICKY NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="brand-logo">
+                <img src="logo gmw.jpg" alt="Guru Men's Wear Logo">
+                <div class="brand-text">
+                    <span class="brand-title">Guru Men's Wear</span>
+                    <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu (Single Line Aligned) -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="service.html" class="nav-link">Services</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="order.html" class="nav-link">Price & Order</a></li>
+                <li><a href="booking.html" class="nav-link">Book Fitting</a></li>
+                <li><a href="ourcontact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- ACTION BUTTONS: SIGN IN & SIGN UP (MOVED TO RIGHT) -->
+            <div class="nav-actions">
+                <a href="signin.html" class="btn btn-sm" style="background-color: #ff7346 !important; color: #ffffff !important; font-weight: 700; padding: 8px 18px; border-radius: 6px;"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+                <a href="signup.html" class="btn btn-sm" style="background-color: #ff7346 !important; color: #ffffff !important; font-weight: 700; padding: 8px 18px; border-radius: 6px;"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+                <button class="mobile-toggle" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-nav">
+        <div class="mobile-nav-content">
+            <div class="brand-logo" style="margin-bottom: 15px;">
+                <img src="logo gmw.jpg" alt="Guru Men's Wear" style="height: 48px;">
+                <div class="brand-text">
+                    <span class="brand-title" style="font-size: 1.15rem;">Guru Men's Wear</span>
+                    <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                </div>
+            </div>
+            <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+                <a href="signin.html" class="btn btn-sm" style="flex: 1; background-color: #ff7346 !important; color: white !important;"><i class="fa-solid fa-right-to-bracket"></i> Sign In</a>
+                <a href="signup.html" class="btn btn-sm" style="flex: 1; background-color: #ff7346 !important; color: white !important;"><i class="fa-solid fa-user-plus"></i> Sign Up</a>
+            </div>
+            <a href="index.html" class="mobile-nav-link active"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="service.html" class="mobile-nav-link"><i class="fa-solid fa-shirt"></i> Services & Pricing</a>
+            <a href="gallery.html" class="mobile-nav-link"><i class="fa-solid fa-images"></i> Work & Shop Gallery</a>
+            <a href="order.html" class="mobile-nav-link"><i class="fa-solid fa-calculator"></i> Price & Order Calculator</a>
+            <a href="booking.html" class="mobile-nav-link"><i class="fa-solid fa-calendar-check"></i> Book an Appointment</a>
+            <a href="ourcontact.html" class="mobile-nav-link"><i class="fa-solid fa-location-dot"></i> Contact & Location</a>
+            <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 10px 0;">
+            <a href="https://wa.me/918722273051" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat with Master Tailor</a>
+            <a href="tel:+918722273051" class="btn btn-call" style="background-color: #1d4ed8 !important;"><i class="fa-solid fa-phone"></i> Call Shop Now</a>
+        </div>
     </div>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-pill">
+                        <span class="badge badge-gold" style="background: #fff3e0; color: #e65c2e; border: 1px solid rgba(255,115,70,0.3);"><i class="fa-solid fa-crown" style="color: #ff7346;"></i> Master Cutting & Bespoke Tailoring</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Perfect Stitch, <span style="background: linear-gradient(135deg, #ff8558 0%, #ff7346 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Perfect Fit.</span><br>Crafted For Distinction.
+                    </h1>
+                    <p class="hero-subtitle">
+                        Welcome to <strong>Guru Men's Wear</strong>, Bidar's trusted destination for precision fabric cutting, sharp bespoke suits, custom-fit shirts, trousers, safaris, and traditional kurtas. Tailored to your exact physique and personality.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="order.html" class="btn btn-lg" style="background-color: #ff7346 !important; color: #ffffff !important; font-weight: 700;"><i class="fa-solid fa-calculator"></i> Customize Your Order</a>
+                        <a href="booking.html" class="btn btn-lg" style="background-color: #ff7346 !important; color: #ffffff !important; font-weight: 700;"><i class="fa-solid fa-calendar-days"></i> Book a Fitting</a>
+                        <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20would%20like%20to%20inquire%20about%20tailoring%20services." target="_blank" class="btn btn-whatsapp btn-lg"><i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Years of Craft</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10,000+</span>
+                            <span class="stat-label">Satisfied Fits</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Custom Handcrafted</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4.9★</span>
+                            <span class="stat-label">Customer Rating</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Showcase Card -->
+                <div class="hero-card-preview">
+                    <div class="hero-card-main">
+                        <img src="b 1 measure.jpg" alt="Master tailor taking measurements" class="hero-card-img">
+                    </div>
+                    <div class="hero-float-badge">
+                        <div class="hero-float-icon">
+                            <i class="fa-solid fa-tape"></i>
+                        </div>
+                        <div>
+                            <div style="font-weight: 700; font-size: 0.95rem;">Precision 25-Point Fit</div>
+                            <div style="font-size: 0.8rem; color: var(--text-muted);">Exact measurement guarantee</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- FULL ORANGE LINE TERMINAL -->
+    <div class="terminal-orange-line"></div>
+
+    <!-- TRUST & HIGHLIGHTS STRIP -->
+    <div class="container">
+        <section class="features-strip">
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon-wrap"><i class="fa-solid fa-scissors"></i></div>
+                    <div class="feature-info">
+                        <h4>Master Fabric Cutting</h4>
+                        <p>Specialized hand-drafted patterns tailored to accentuate your unique posture.</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon-wrap"><i class="fa-solid fa-vest"></i></div>
+                    <div class="feature-info">
+                        <h4>Suits & Traditional Wear</h4>
+                        <p>From sharp 2-piece suits and blazers to royal long kurtas and safaris.</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon-wrap"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="feature-info">
+                        <h4>Express Turnaround</h4>
+                        <p>Fast and punctual delivery for festivals, weddings, and urgent occasions.</p>
+                    </div>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon-wrap"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <div class="feature-info">
+                        <h4>Affordable Excellence</h4>
+                        <p>High-end bespoke craftsmanship starting at only ₹350 for shirts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- SERVICES SHOWCASE -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Craft</span>
+                <h2 class="section-title">Our Bespoke Tailoring Services</h2>
+                <p class="section-desc">Every stitch is placed with surgical precision. Explore our signature men's tailoring categories below.</p>
+                <div class="divider-gold"></div>
+            </div>
+
+            <div class="services-grid">
+                <!-- Shirt -->
+                <div class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="n shirt.jpg" alt="Custom tailored formal and casual shirt">
+                        <div class="service-price-tag">From <span>₹350</span></div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Custom Shirts</h3>
+                        <p class="service-desc">Crafted with attention to detail for timeless elegance. Custom collars, cuffs, and an immaculate torso drape for formal and casual wear.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Custom collar (Spread, Mandarin, Cutaway)</li>
+                            <li><i class="fa-solid fa-check"></i> Single / Double button cuffs</li>
+                            <li><i class="fa-solid fa-check"></i> Slim, Regular, or Relaxed fit</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="order.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-plus"></i> Order Stitching</a>
+                            <a href="service.html#shirt" class="btn btn-details btn-sm">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trouser / Pant -->
+                <div class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="n pant.jpg" alt="Tailored formal trousers and chinos">
+                        <div class="service-price-tag">From <span>₹500</span></div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Trousers & Pants</h3>
+                        <p class="service-desc">Tailored to perfection with a flawless fall and structured silhouette. Lasting comfort with durable seams and deep pockets.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Flat front or Pleated designs</li>
+                            <li><i class="fa-solid fa-check"></i> Comfort waist lining & heavy-duty zippers</li>
+                            <li><i class="fa-solid fa-check"></i> Clean ankle hem or turn-up cuffs</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="order.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-plus"></i> Order Stitching</a>
+                            <a href="service.html#pant" class="btn btn-details btn-sm">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bespoke Suit -->
+                <div class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="n suit.jpg" alt="Two piece and three piece bespoke suit">
+                        <div class="service-price-tag">From <span>₹1,200</span></div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Bespoke Suits</h3>
+                        <p class="service-desc">Reflect confidence and distinction on grand celebrations and meetings. Hand-canvassed chest structure with a commanding shoulder drape.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Notch, Peak, or Shawl lapels</li>
+                            <li><i class="fa-solid fa-check"></i> Premium inner silk lining options</li>
+                            <li><i class="fa-solid fa-check"></i> Multi-stage basted trial fitting</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="order.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-plus"></i> Order Stitching</a>
+                            <a href="service.html#suit" class="btn btn-details btn-sm">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blazer -->
+                <div class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="n blezer.jpg" alt="Tailored casual and formal blazer">
+                        <div class="service-price-tag">From <span>₹1,450</span></div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Designer Blazers</h3>
+                        <p class="service-desc">The ultimate balance of structure and effortless sophistication. Designed to match with denims, chinos, or formal pants.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Single or Double breasted cuts</li>
+                            <li><i class="fa-solid fa-check"></i> Flap, patch, or jet pockets</li>
+                            <li><i class="fa-solid fa-check"></i> Premium horn / metal buttons</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="order.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-plus"></i> Order Stitching</a>
+                            <a href="service.html#blezer" class="btn btn-details btn-sm">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Long Kurta -->
+                <div class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="n l kurta.jpg" alt="Traditional Indian long kurta">
+                        <div class="service-price-tag">From <span>₹580</span></div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Traditional Long Kurtas</h3>
+                        <p class="service-desc">Timeless ethnic heritage blended with modern drape. Perfect for festivals, weddings, pujas, and cultural celebrations.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Mandarin collar with neat placket</li>
+                            <li><i class="fa-solid fa-check"></i> Deep side pockets with reinforced slits</li>
+                            <li><i class="fa-solid fa-check"></i> Paired with matching Pajama / Churidar</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="order.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-plus"></i> Order Stitching</a>
+                            <a href="service.html#lkurta" class="btn btn-details btn-sm">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Short Kurta -->
+                <div class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="n s kurta.webp" alt="Modern short kurta for men">
+                        <div class="service-price-tag">From <span>₹550</span></div>
+                    </div>
+                    <div class="service-body">
+                        <h3 class="service-title">Casual Short Kurtas</h3>
+                        <p class="service-desc">Contemporary styling meeting traditional comfort. Lightweight, breezy, and effortlessly paired with blue jeans or trousers.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> Curved or straight hem finish</li>
+                            <li><i class="fa-solid fa-check"></i> Roll-up sleeve tabs option</li>
+                            <li><i class="fa-solid fa-check"></i> Cotton, Linen, and blend fabrics</li>
+                        </ul>
+                        <div class="service-footer">
+                            <a href="order.html" class="btn btn-primary btn-sm" style="flex: 1;"><i class="fa-solid fa-plus"></i> Order Stitching</a>
+                            <a href="service.html#skurta" class="btn btn-details btn-sm">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 45px;">
+                <a href="service.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-list-check"></i> View Full Services & Alterations Catalog</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MASTER TAILOR STORY -->
+    <section class="section section-warm">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-img-collage">
+                    <img src="2 men t shop.png" alt="In shop consultation with customer" class="story-img-main">
+                    <div>
+                        <img src="t m s image.jpg" alt="Tailor precision fabric cutting" class="story-img-sub">
+                        <img src="r t s image.jpg" alt="Sewing machine workshop" class="story-img-sub">
+                    </div>
+                </div>
+
+                <div class="story-content">
+                    <span class="section-tag">Heritage & Dedication</span>
+                    <h3>The Master Behind The Cut: Crafting Without Compromise</h3>
+                    <p>
+                        At <strong>Guru Men's Wear</strong>, every garment begins with a pair of shears, tailors chalk, and decades of honed intuition. Cutting fabric is not just slicing cloth—it is an architectural art of shaping two-dimensional textiles into a three-dimensional sculpture that moves effortlessly with your body.
+                    </p>
+                    <p>
+                        Whether drafting a sharp double-breasted blazer for your wedding or crafting a comfortable cotton shirt for everyday wear, our master cutter personally analyzes your posture, shoulder slope, and chest build to ensure no pulling, no bunching, and complete comfort.
+                    </p>
+
+                    <div class="story-badges">
+                        <div class="story-badge-item">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                            <span>Hand-Drafted Patterns</span>
+                        </div>
+                        <div class="story-badge-item">
+                            <i class="fa-solid fa-award"></i>
+                            <span>Master Cutter Oversight</span>
+                        </div>
+                        <div class="story-badge-item">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Guaranteed Perfect Fitting</span>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+                        <a href="booking.html" class="btn btn-primary"><i class="fa-solid fa-handshake"></i> Book a Consultation</a>
+                        <a href="gallery.html" class="btn btn-outline"><i class="fa-solid fa-images"></i> See Workshop Photos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE 5-STEP BESPOKE JOURNEY -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">The Bespoke Tailoring Process</h2>
+                <p class="section-desc">From your first consultation to final handover, we make custom tailoring transparent, enjoyable, and precise.</p>
+                <div class="divider-gold"></div>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4 class="step-title">Consultation & Fabric</h4>
+                    <p class="step-desc">Bring your own fabric or discuss suitable cotton, linen, silk, or wool choices with our master tailor.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4 class="step-title">25-Point Measurement</h4>
+                    <p class="step-desc">We record your posture, armhole circumference, chest slope, and exact sleeve length for a bespoke fit.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4 class="step-title">Master Hand Cutting</h4>
+                    <p class="step-desc">Your unique blueprint is drafted with chalk and cut by hand to maximize fabric grain alignment and drape.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4 class="step-title">Precision Stitching</h4>
+                    <p class="step-desc">Stitched with reinforced seams, high-grade threads, fused collars, and durable buttons.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h4 class="step-title">Trial & Handover</h4>
+                    <p class="step-desc">You try on the finished outfit in our shop. Any micro-adjustments are completed immediately before handover.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE ORDER & PRICE CALCULATOR TEASER -->
+    <section class="section section-alt">
+        <div class="container container-narrow">
+            <div class="section-header">
+                <span class="section-tag">Instant Estimate & Order</span>
+                <h2 class="section-title">Customize Your Stitching Order</h2>
+                <p class="section-desc">Select your garments below to calculate your estimate live, then send your order directly to our master tailor on WhatsApp with 1 click!</p>
+                <div class="divider-gold"></div>
+            </div>
+
+            <!-- LIVE CALCULATOR COMPONENT -->
+            <div class="calc-wrapper">
+                <div class="calc-header">
+                    <h3>Guru Men's Wear Stitching Calculator</h3>
+                    <p>Transparent rates. No hidden fees. Tailored to perfection.</p>
+                </div>
+
+                <div class="calc-body">
+                    <div class="calc-grid">
+                        <!-- Shirt -->
+                        <div class="calc-item-card" data-name="Shirt" data-price="350">
+                            <div class="calc-item-info">
+                                <h4>Shirt</h4>
+                                <span class="item-unit-price">₹350 / piece</span>
+                            </div>
+                            <div class="calc-stepper">
+                                <button type="button" class="calc-btn minus" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="calc-qty-input" value="0" min="0">
+                                <button type="button" class="calc-btn plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <div class="calc-item-total">₹0</div>
+                        </div>
+
+                        <!-- Pant -->
+                        <div class="calc-item-card" data-name="Pant / Trouser" data-price="500">
+                            <div class="calc-item-info">
+                                <h4>Pant / Trouser</h4>
+                                <span class="item-unit-price">₹500 / piece</span>
+                            </div>
+                            <div class="calc-stepper">
+                                <button type="button" class="calc-btn minus" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="calc-qty-input" value="0" min="0">
+                                <button type="button" class="calc-btn plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <div class="calc-item-total">₹0</div>
+                        </div>
+
+                        <!-- Suit -->
+                        <div class="calc-item-card" data-name="Bespoke Suit" data-price="1200">
+                            <div class="calc-item-info">
+                                <h4>Bespoke Suit</h4>
+                                <span class="item-unit-price">₹1,200 / piece</span>
+                            </div>
+                            <div class="calc-stepper">
+                                <button type="button" class="calc-btn minus" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="calc-qty-input" value="0" min="0">
+                                <button type="button" class="calc-btn plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <div class="calc-item-total">₹0</div>
+                        </div>
+
+                        <!-- Blazer -->
+                        <div class="calc-item-card" data-name="Blazer" data-price="1450">
+                            <div class="calc-item-info">
+                                <h4>Blazer</h4>
+                                <span class="item-unit-price">₹1,450 / piece</span>
+                            </div>
+                            <div class="calc-stepper">
+                                <button type="button" class="calc-btn minus" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="calc-qty-input" value="0" min="0">
+                                <button type="button" class="calc-btn plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <div class="calc-item-total">₹0</div>
+                        </div>
+
+                        <!-- Long Kurta -->
+                        <div class="calc-item-card" data-name="Long Kurta" data-price="580">
+                            <div class="calc-item-info">
+                                <h4>Long Kurta</h4>
+                                <span class="item-unit-price">₹580 / piece</span>
+                            </div>
+                            <div class="calc-stepper">
+                                <button type="button" class="calc-btn minus" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="calc-qty-input" value="0" min="0">
+                                <button type="button" class="calc-btn plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <div class="calc-item-total">₹0</div>
+                        </div>
+
+                        <!-- Short Kurta -->
+                        <div class="calc-item-card" data-name="Short Kurta" data-price="550">
+                            <div class="calc-item-info">
+                                <h4>Short Kurta</h4>
+                                <span class="item-unit-price">₹550 / piece</span>
+                            </div>
+                            <div class="calc-stepper">
+                                <button type="button" class="calc-btn minus" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="calc-qty-input" value="0" min="0">
+                                <button type="button" class="calc-btn plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <div class="calc-item-total">₹0</div>
+                        </div>
+
+                        <!-- Safari -->
+                        <div class="calc-item-card" data-name="Safari Suit" data-price="900">
+                            <div class="calc-item-info">
+                                <h4>Safari Suit</h4>
+                                <span class="item-unit-price">₹900 / piece</span>
+                            </div>
+                            <div class="calc-stepper">
+                                <button type="button" class="calc-btn minus" aria-label="Decrease quantity">-</button>
+                                <input type="number" class="calc-qty-input" value="0" min="0">
+                                <button type="button" class="calc-btn plus" aria-label="Increase quantity">+</button>
+                            </div>
+                            <div class="calc-item-total">₹0</div>
+                        </div>
+                    </div>
+
+                    <!-- Live Total Box -->
+                    <div class="calc-summary-box">
+                        <div class="summary-details">
+                            <span class="summary-label">Estimated Stitching Total</span>
+                            <span class="summary-amount" id="calcTotalAmount">₹0</span>
+                            <span class="summary-count" id="calcTotalCount">0 Garments selected</span>
+                        </div>
+                        <a href="order.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-arrow-right"></i> Open Full Order Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-desc">Serving generations of gentlemen in Bidar and surrounding regions with honesty, speed, and uncompromising quality.</p>
+                <div class="divider-gold"></div>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "The fitting of my wedding blazer was extraordinary! The shoulder structure and the sleeve length were spot on. Guru uncle is truly a master cutter. Best tailoring shop in Bidar district."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SV</div>
+                        <div class="author-meta">
+                            <h5>Suresh Patil</h5>
+                            <span>Bidar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "I had 4 pairs of shirts and trousers stitched here. The collar finish is very crisp and the trouser fall is very sharp. Delivery was on time as promised. Highly recommend Guru Men's Wear!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div class="author-meta">
+                            <h5>Anand Kulkarni</h5>
+                            <span>Noubad, Bidar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Stitched a long kurta pajama for Diwali festival. The comfort and elegance were top notch. The price of ₹580 is completely worth the master craftsmanship you receive."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MB</div>
+                        <div class="author-meta">
+                            <h5>Mahesh Biradar</h5>
+                            <span>Humnabad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FULL ORANGE LINE TERMINAL -->
+    <div class="terminal-orange-line"></div>
+
+    <!-- SHOP LOCATION & VISITING CARD SHOWCASE (CLEAN 2-COLUMN ATELIER SECTION) -->
+    <section class="section section-alt" id="atelier-location">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Visit Our Atelier</span>
+                <h2 class="section-title">Shop Card & Location</h2>
+                <p class="section-desc">Drop by Jamadar Complex, Noubad, Bidar for bespoke consultations, fabric discussions, and custom fittings.</p>
+                <div class="divider-gold" style="background: #ff7346; width: 80px; height: 3px;"></div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; align-items: stretch;">
+                
+                <!-- Left Side: Official Visiting Card / Shop Banner -->
+                <div style="background: white; border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow-md); border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; border-bottom: 2px solid #ff7346; padding-bottom: 12px;">
+                            <h3 style="font-size: 1.25rem; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                                <i class="fa-solid fa-address-card" style="color: #ff7346;"></i> Official Shop Card
+                            </h3>
+                            <span class="badge" style="background: #fff3e0; color: #ff7346; font-weight: 700;">Guru Men's Wear</span>
+                        </div>
+                        <div style="text-align: center; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.08); border: 1px solid #e2e8f0;">
+                            <img src="guru mens wear visiting card.jpg" alt="Guru Men's Wear Official Visiting Card" style="width: 100%; height: auto; display: block; object-fit: contain;">
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap;">
+                        <a href="tel:+918722273051" class="btn btn-call btn-sm" style="flex: 1; min-width: 140px; justify-content: center;"><i class="fa-solid fa-phone"></i> Call +91 8722273051</a>
+                        <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20got%20your%20visiting%20card%20from%20the%20website." target="_blank" class="btn btn-whatsapp btn-sm" style="flex: 1; min-width: 140px; justify-content: center;"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Right Side: Location Map Photo & Coordinates & Directions -->
+                <div style="background: white; border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow-md); border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; border-bottom: 2px solid #ff7346; padding-bottom: 12px;">
+                            <h3 style="font-size: 1.25rem; color: var(--primary); display: flex; align-items: center; gap: 8px;">
+                                <i class="fa-solid fa-location-dot" style="color: #ff7346;"></i> Atelier Location Map
+                            </h3>
+                            <span class="badge" style="background: #eff6ff; color: #1d4ed8; font-weight: 700;"><i class="fa-solid fa-compass"></i> 17.935206, 77.473038</span>
+                        </div>
+                        <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.08); border: 1px solid #e2e8f0; position: relative;">
+                            <a href="https://www.google.com/maps/search/?api=1&query=17.935206,77.473038" target="_blank" title="Click to open Google Maps Directions">
+                                <img src="location_map.png" alt="Google Map Location of Guru Men's Wear at Jamadar Complex, Noubad, Bidar" style="width: 100%; height: 260px; object-fit: cover; display: block;">
+                            </a>
+                        </div>
+                        <div style="margin-top: 16px;">
+                            <h4 style="color: var(--primary); font-size: 1.05rem; margin-bottom: 4px;">Jamadar Complex, Noubad</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 6px;">Bidar District, Karnataka - 585401</p>
+                            <div style="font-size: 0.85rem; color: #64748b;">
+                                <i class="fa-solid fa-clock" style="color: #ff7346; margin-right: 4px;"></i> Mon-Sat: 9:00 AM - 8:00 PM | Sun: 9:00 AM - 2:00 PM
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap;">
+                        <a href="https://www.google.com/maps/search/?api=1&query=17.935206,77.473038" target="_blank" class="btn btn-primary btn-sm" style="flex: 1.2; min-width: 160px; justify-content: center;"><i class="fa-solid fa-diamond-turn-right"></i> Open Google Maps</a>
+                        <a href="ourcontact.html" class="btn btn-details btn-sm" style="flex: 1; min-width: 140px; justify-content: center;">Full Contact Page <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FULL ORANGE LINE TERMINAL -->
+    <div class="terminal-orange-line"></div>
+
+    <!-- FLOATING ACTION BUTTONS -->
+    <div class="floating-actions">
+        <a href="https://wa.me/918722273051?text=Hello%20Guru%20Mens%20Wear,%20I%20would%20like%20to%20inquire%20about%20stitching." target="_blank" class="float-btn float-whatsapp" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+918722273051" class="float-btn float-call" title="Call Shop" aria-label="Call Shop">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- LUXURY FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="brand-logo" style="margin-bottom: 12px;">
+                        <img src="logo gmw.jpg" alt="GMW Logo" style="height: 48px; background: white; padding: 2px;">
+                        <div class="brand-text">
+                            <span class="brand-title">Guru Men's Wear</span>
+                            <span class="brand-tagline">Perfect Stitch, Perfect Fit</span>
+                        </div>
+                    </div>
+                    <p>
+                        Dedicated to the art of master fabric cutting and bespoke men's tailoring. Stitched to your unique measurements with premium craftsmanship in Jamadar Complex, Noubad, Bidar.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="service.html"><i class="fa-solid fa-angle-right"></i> Tailoring Services</a></li>
+                        <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Photo Gallery</a></li>
+                        <li><a href="order.html"><i class="fa-solid fa-angle-right"></i> Price & Order Sheet</a></li>
+                        <li><a href="booking.html"><i class="fa-solid fa-angle-right"></i> Book Fitting Slot</a></li>
+                        <li><a href="ourcontact.html"><i class="fa-solid fa-angle-right"></i> Contact & Location</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="service.html#shirt"><i class="fa-solid fa-scissors"></i> Custom Shirts (₹350)</a></li>
+                        <li><a href="service.html#pant"><i class="fa-solid fa-scissors"></i> Formal Trousers (₹500)</a></li>
+                        <li><a href="service.html#suit"><i class="fa-solid fa-scissors"></i> Bespoke Suits (₹1,200)</a></li>
+                        <li><a href="service.html#blezer"><i class="fa-solid fa-scissors"></i> Royal Blazers (₹1,450)</a></li>
+                        <li><a href="service.html#lkurta"><i class="fa-solid fa-scissors"></i> Long Kurtas (₹580)</a></li>
+                        <li><a href="service.html#alternation"><i class="fa-solid fa-scissors"></i> Expert Alterations</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contact Workshop</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Jamadar Complex, Noubad, Bidar - 585401</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <span><a href="tel:+918722273051">+91 8722273051</a> / <a href="tel:+916362729684">6362729684</a></span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>gurumenswear@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-credit-card"></i>
+                            <span>UPI (PhonePe / GPay / Paytm), Cash</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Guru Men's Wear (GMW). All rights reserved.</p>
+                <p>Crafted with pride &bull; Perfect Stitch, Perfect Fit</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="js/main.js"></script>
 </body>
 </html>
